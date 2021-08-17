@@ -1,0 +1,1912 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/funciones.js"></script>
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- SLICK SLIDER -->
+		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+		<script type="text/javascript" src="slick/slick.min.js"></script>
+    
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+
+    <!-- GOOGLE ICON -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <!-- metadatos  -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:description" content="">
+    <meta property="og:email" content="">
+
+
+    <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+
+</head>
+
+
+<body>
+
+    <!-- Modal -->
+
+    <div id="lightBox-Back"></div>
+    <!-- Fin Modal-->
+
+    <main>
+
+        <!-- CABECERA -->
+        <header class="container-fluid" id="header-page">
+
+          <!-- Carrusel Cabecera TOP-->
+          <div id="wrap-header-top">
+
+            <div id="carousel-header-top" class="carousel slide" data-bs-ride="carousel">
+
+              <div class="carousel-inner">
+                <!-- info slide-->
+                <div class="slider-header-top carousel-item w-100 active">
+                  <p>10% DE DESCUENTO POR TU PRIMERA COMPRA CON EL CUPÓN: 1COMPRACUCU</p>
+                </div>
+                <!-- info slide-->
+                <div class="slider-header-top carousel-item w-100">
+                  <p>20% DE DESCUENTO POR TU PRIMERA COMPRA CON EL CUPÓN: 1COMPRACUCU</p>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel-header-top" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel-header-top" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <!-- Fin Carrusel Cabecera TOP-->
+
+          <!-- **** -->
+
+          <!-- Área header-->
+          <div id="wrap-header"  class="container-fluid d-flex flex-row justify-content-between align-items-center">
+            <!-- costo y buscador -->
+            <div id="wrap-moneda-buscador-header" class="d-flex flex-row align-items-center">
+              <div id="wrap-moneda-header" class="d-flex flex-row align-items-center">
+                <span id="cuenta-pais">COL</span> <span id="cuenta-saparador">&nbsp;|&nbsp;</span> <span id="cuenta-moneda">$</span> <span id="cuenta-valor">450.000</span>
+              </div>
+              <div id="wrap-buscador-header">
+                <form id="search-header" name="search-header" action="" method="POST">
+                  <div class="d-flex flex-row align-items-center">
+                    <label for="field-search-header" class="">
+                      <img src="images/ico-search.svg" class="icono-header" alt="Buscar">
+                    </label>
+                    <input type="search" id="field-search-header" name="field-search-header" value="Encuentra lo que buscas" class="">
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <!-- Logo -->
+            <h1 id="logo-top-header">Cucu, Tienda de ropa infantil</h1>
+
+            <!-- menu auxiliar y carrito -->
+            <div id="wrap-menu-carrito-header" class="d-flex flex-row align-items-center justify-content-end">
+              
+              <!-- Menu de Cuentas -->
+              <label class="" for="check-cuenta">
+                <div class="enlace-header d-flex flex-row align-items-center" id="cuenta-header">
+                  <img src="images/ico-cuenta.svg" class="icono-header" alt="Cuenta de usuario">
+                  <span>Cuenta</span>
+                </div>
+              </label>
+              <input type="checkbox" class="hidden" id="check-cuenta">
+
+                        <!-- menu flotante cuenta -->
+                        <div class="" id="menu-cuenta">
+
+                          <div id="puntero-cuenta-box"></div>
+                          
+                          <label id="close-cuenta-movil" for="check-cuenta">
+                            <img src="images/ico-cerrar.svg" alt="icon close menu" id="close-ico-cuenta-movil">
+                          </label>   
+
+                          <h3 class="subtitulo-menu-cuenta">TU CUENTA</h3>
+                          <ul>
+                            <!-- Elemento menu cuenta (data-bs-target y aria-controls, deben coincidir con el id de la sublista ul)-->
+                            <li>
+                              <div class="wrap-enlace-acordeon-menu-cuenta" data-bs-toggle="collapse" data-bs-target="#submenu-miInformacion" aria-expanded="true" aria-controls="submenu-miInformacion">
+                                <a class="enlace-acordeon-menu-cuenta">Mi información</a>
+                                <span class="material-icons">expand_more</span>
+                              </div>
+                              <ul id="submenu-miInformacion" class="collapse">
+                                <li><a href="" class="subenlace-acordeon-menu-cuenta">Perfil</a></li>
+                                <li><a href="" class="subenlace-acordeon-menu-cuenta">Direcciones</a></li>
+                                <li><a href="" class="subenlace-acordeon-menu-cuenta">Métodos de pago</a></li>
+                                <li><a href="" class="subenlace-acordeon-menu-cuenta">Cambiar contraseñas</a></li>
+                              </ul>
+                            </li>
+                            <!-- Elemento menu cuenta (data-bs-target y aria-controls, deben coincidir con el id de la sublista ul)-->
+                            <li>
+                              <div class="wrap-enlace-acordeon-menu-cuenta" data-bs-toggle="collapse" data-bs-target="#submenu-miOrdenes" aria-expanded="true" aria-controls="submenu-miOrdenes">
+                                <a href="" class="enlace-acordeon-menu-cuenta">Mis órdenes</a>
+                                <span class="material-icons">expand_more</span>
+                              </div>
+                              <ul id="submenu-miOrdenes" class="collapse">
+                                <li><a href="" class="subenlace-acordeon-menu-cuenta"></a></li>
+                              </ul>
+                            </li>
+                            <!-- Elemento menu cuenta (data-bs-target y aria-controls, deben coincidir con el id de la sublista ul)-->
+                            <li>
+                              <div class="wrap-enlace-acordeon-menu-cuenta" data-bs-toggle="collapse" data-bs-target="#submenu-devoluciones" aria-expanded="true" aria-controls="submenu-devoluciones">
+                                <a href="" class="enlace-acordeon-menu-cuenta">Devoluciones</a>
+                                <span class="material-icons">expand_more</span>
+                              </div>
+                              <ul id="submenu-devoluciones" class="collapse">
+                                <li><a href="" class="subenlace-acordeon-menu-cuenta"></a></li>
+                              </ul>
+                            </li>
+                            <!-- Elemento menu cuenta (data-bs-target y aria-controls, deben coincidir con el id de la sublista ul)-->
+                            <li>
+                              <div class="wrap-enlace-acordeon-menu-cuenta" data-bs-toggle="collapse" data-bs-target="#submenu-giftCreditos" aria-expanded="true" aria-controls="submenu-giftCreditos">
+                                <a href="" class="enlace-acordeon-menu-cuenta">Gift Cards y Crédito</a>
+                                <span class="material-icons">expand_more</span>
+                              </div>
+                              <ul id="submenu-giftCreditos" class="collapse">
+                                <li><a href="" class="subenlace-acordeon-menu-cuenta"></a></li>
+                              </ul>
+                            </li>
+                            <!-- Elemento menu cuenta (data-bs-target y aria-controls, deben coincidir con el id de la sublista ul)-->
+                            <li>
+                              <div class="wrap-enlace-acordeon-menu-cuenta" data-bs-toggle="collapse" data-bs-target="#submenu-perfilHijos" aria-expanded="true" aria-controls="submenu-perfilHijos">
+                                <a href="" class="enlace-acordeon-menu-cuenta">Perfil de Hijos</a>
+                                <span class="material-icons">expand_more</span>
+                              </div>
+                              <ul id="submenu-perfilHijos" class="collapse">
+                                <li><a href="" class="subenlace-acordeon-menu-cuenta"></a></li>
+                              </ul> 
+                            </li>   
+                          </ul>
+                          <a href="" class="enlace-cerrar-menu-cuenta">Cerrar sesión</a>
+                        </div>
+                        <!-- Fin menu flotante cuenta -->
+
+
+              <!-- Cierre menu de Cuentas-->
+              <!-- ****** -->
+              
+              <a href="" class="d-flex flex-row align-items-center enlace-header">
+                <img src="images/ico-favoritos.svg" class="icono-header" alt="Productos favoritos">
+                <span>Favoritos</span>
+              </a>
+              <a href="" class="d-flex flex-row align-items-center enlace-header carrito-header">
+                <img src="images/ico-carrito.svg" class="icono-header" alt="carrito de compras">
+                <span>2</span>
+              </a>
+            </div>
+
+
+
+          </div>
+          <!-- Fin Área header-->
+
+
+        </header>
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+
+        <!-- MENÚ PRINCIPAL -->
+        <nav id="wrap-navegador-principal">
+          <ul id="navegador-principal">
+              <!-- Boton categorías-->
+              <li class="boton-categorias-principal">
+
+                  <label id="boton-categorias" for="check-categorias" class="d-flex flex-row align-items-center justify-content-center">
+                      <div id="wrap-ico-btVerCategorias">
+                        <img src="images/menu.svg" alt="icon view menu" id="open-ico">
+                        <img src="images/ico-cerrar.svg" alt="icon close menu" id="close-ico">
+                      </div>
+                      <span>Categorías</span>
+                  </label>
+                  <input type="checkbox" class="hidden" id="check-categorias">
+
+                          <!-- Menú categorías oculto -->
+                          <div id="wrap-categorias-nav">
+
+                            <label id="close-categorias-movil" for="check-categorias">
+                                <img src="images/ico-cerrar.svg" alt="icon close menu" id="close-ico-categorias-movil">
+                            </label>    
+
+                            <!-- Contenedor que organiza las categorías en dos columnas-->
+                            <div id="categorias-nav-content">
+
+                              <!-- Lista con toda la info de las categorías -->
+                              <ul id="lista-categorias-nav-content">
+                                
+                                <!-- Categoría ************************* -->
+                                <li class="item-categoria">
+                                  <!-- Item principal de la categoría -->
+                                  <button class="boton-item-principal-categoria">
+                                    <span class="label-boton-item-principal-categoria">Moda</span>
+                                    <span class="material-icons">chevron_right</span>
+                                  </button>
+                                  <!-- Finaliza el ítem principal -->
+                                  <!-- Contenedor sub categorías-->
+                                  <section class="wrap-subcategorias-nav">
+                                      <!-- grupo de categorías-->
+                                      <div class="subcategoria-nav">
+                                        <h3 class="subtitulo-subcategoria-nav">Por edades</h3>
+                                        <a href="" class="enlace-subcategoria-nav">Bebés 0-2 años</a>
+                                        <a href="" class="enlace-subcategoria-nav">Niños de 2-10 años</a>
+                                        <a href="" class="enlace-subcategoria-nav">Niños de 11-14 años</a>
+                                        <a href="" class="enlace-verTodo-subcategoria-nav">Ver todo</a>
+                                      </div>
+                                      <!-- fin grupo de categorías-->
+                                      <!-- grupo de categorías-->
+                                      <div class="subcategoria-nav">
+                                        <h3 class="subtitulo-subcategoria-nav">Por edad</h3>
+                                        <a href="" class="enlace-subcategoria-nav">Bebés 0-2 años</a>
+                                        <a href="" class="enlace-subcategoria-nav">Niños de 2-10 años</a>
+                                        <a href="" class="enlace-subcategoria-nav">Niños de 11-14 años</a>
+                                        <a href="" class="enlace-verTodo-subcategoria-nav">Ver todo</a>
+                                      </div>
+                                      <!-- fin grupo de categorías-->
+                                  </section>
+                                  <!-- Fin contenedor sub categorías-->
+                                </li>
+                                <!-- Fin Categoría -->
+
+                                <!-- *** -->
+
+                                <!-- Categoría ************************* -->
+                                <li class="item-categoria">
+                                  <!-- Item principal de la categoría -->
+                                  <button class="boton-item-principal-categoria">
+                                    <span class="label-boton-item-principal-categoria">Moda</span>
+                                    <span class="material-icons">chevron_right</span>
+                                  </button>
+                                  <!-- Finaliza el ítem principal -->
+                                  <!-- Contenedor sub categorías-->
+                                  <section class="wrap-subcategorias-nav">
+                                      <!-- grupo de categorías-->
+                                      <div class="subcategoria-nav">
+                                        <h3 class="subtitulo-subcategoria-nav">Por edad</h3>
+                                        <a href="" class="enlace-subcategoria-nav">Bebés 0-2 años</a>
+                                        <a href="" class="enlace-subcategoria-nav">Niños de 2-10 años</a>
+                                        <a href="" class="enlace-subcategoria-nav">Niños de 11-14 años</a>
+                                        <a href="" class="enlace-verTodo-subcategoria-nav">Ver todo</a>
+                                      </div>
+                                      <!-- fin grupo de categorías-->
+                                      <!-- grupo de categorías-->
+                                      <div class="subcategoria-nav">
+                                        <h3 class="subtitulo-subcategoria-nav">Por edad</h3>
+                                        <a href="" class="enlace-subcategoria-nav">Bebés 0-2 años</a>
+                                        <a href="" class="enlace-subcategoria-nav">Niños de 2-10 años</a>
+                                        <a href="" class="enlace-subcategoria-nav">Niños de 11-14 años</a>
+                                        <a href="" class="enlace-verTodo-subcategoria-nav">Ver todo</a>
+                                      </div>
+                                      <!-- fin grupo de categorías-->
+                                      <!-- grupo de categorías-->
+                                      <div class="subcategoria-nav">
+                                        <h3 class="subtitulo-subcategoria-nav">Por edad</h3>
+                                        <a href="" class="enlace-subcategoria-nav">Bebés 0-2 años</a>
+                                        <a href="" class="enlace-subcategoria-nav">Niños de 2-10 años</a>
+                                        <a href="" class="enlace-subcategoria-nav">Niños de 11-14 años</a>
+                                        <a href="" class="enlace-verTodo-subcategoria-nav">Ver todo</a>
+                                      </div>
+                                      <!-- fin grupo de categorías-->
+                                  </section>
+                                  <!-- Fin contenedor sub categorías-->
+                                </li>
+                                <!-- Fin Categoría -->
+                              </ul>
+                              <!-- Lista con toda la info de las categorías -->
+
+                              <!-- Contenedor que recibe las subcategorías al click / No borrar auque está vacío -->
+                              <div id="subcategorias-nav-content">
+
+                              </div>
+                              <!-- Fin Contenedor que recibe las subcategorías al click / No borrar auque está vacío  -->
+
+                            </div>
+                            <!-- Fin contenedor que organiza las categorías en dos columnas-->
+
+                          </div>
+                          <!-- Fin Menú categorías oculto-->
+
+
+
+              </li>
+              <!-- menu normal-->
+              <li><a href="" class="boton-menu-principal">Lo Nuevo</a></li>
+              <li><a href="" class="boton-menu-principal">Gift Cards</a></li>
+              <li><a href="" class="boton-menu-principal">Marcas</a></li>
+              <li><a href="" class="boton-menu-principal bt-ofertas">Ofertas <span>del día</span></a></li>
+              <li><a href="" class="boton-menu-principal bt-cucu-world">Cucu World</a></li>
+            </ul>
+
+        </nav>
+        <!-- Finaliza el menú principal -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+
+
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- Slider principal -->
+        <div id="wrap-slider-index">
+          <!-- Img Manchitas
+          <img src="images/backSlide.png" alt="Manchitas" class="manchitasHero">-->
+          <!-- Comienzo carrusel-->
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <!-- Comienzo carrusel-Inner-->
+            <div class="carousel-inner">
+              <!-- Item 1 carrusel-->
+              <div class="item-slider-index carousel-item active">
+                <!-- img slide-->
+                <img src="images/slide1.jpg" class="d-block w-100" alt="Silide 1">
+                <!-- Caption Slide-->
+                <div class="carousel-caption-hero d-md-block slideOpacity">
+                  <div class="captionPosition">
+                    <p>Decoración</p>
+                    <h1>Spring summer collection</h1>
+                    <button class="CTA" type="button">Ver colección</button>
+                  </div>
+                </div>
+                <!-- Finaliza Caption Slide-->
+              </div>
+
+              <!-- Item 2 carrusel-->
+              <div class="item-slider-index carousel-item">
+                <!-- img slide-->
+                <img src="images/slide1.jpg" class="d-block w-100" alt="Silide 1">
+                <!-- Caption Slide-->
+                <div class="carousel-caption-hero d-md-block slideOpacity">
+                  <div class="captionPosition">
+                    <p>Decoración</p>
+                    <h1>Spring summer collection</h1>
+                    <button class="CTA" type="button">Ver colección</button>
+                  </div>
+                </div>
+                <!-- Finaliza Caption Slide-->
+              </div>
+
+              <!-- Item 3 carrusel-->
+              <div class="carousel-item">
+                <!-- img slide-->
+                <img src="images/slide1.jpg" class="d-block w-100" alt="Silide 1">
+                <!-- Caption Slide-->
+                <div class="carousel-caption-hero d-md-block slideOpacity">
+                  <div class="captionPosition">
+                    <p>Decoración</p>
+                    <h1>Spring summer collection</h1>
+                    <button class="CTA" type="button">Ver colección</button>
+                  </div>
+                </div>
+                <!-- Finaliza Caption Slide-->
+              </div>
+
+            </div>
+            <!-- Finaliza carrusel-Inner-->
+
+            <!-- Comienzo controladores-->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <div class="buttonHeroPrev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              </div>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <div class="buttonHeroNext">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              </div>
+              <span class="visually-hidden">Next</span>
+            </button>
+            <!-- Finaliza controladores-->
+          </div>
+          <!-- Finaliza carrusel-->
+      </div>
+
+
+        <!-- Finaliza Slider principal -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+
+
+
+
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- Compra por edades -->
+        <section id="wrap-compra-edades">
+          <h2 class="titulo-seccion">Compra por edades</h2> 
+
+          <!-- Row div -->
+          <div id="compra-edades">
+
+            <!-- Compra Bebes -->
+            <div class="entrada-edades">
+              <!-- Contenedor Img-->
+              <div class="imgContainer">
+                <img src="images/CompraBebe.jpg" alt="Bebe en brazos">
+              </div>
+              <!-- Finaliza Contenedor Img-->
+              <h2>Bebés</h2>
+              <p>0 - 2 AÑOS</p>
+              <a href class="boton back4" type="button">Ver +</a>
+            </div>
+            <!-- Finaliza Compra Bebes -->
+
+            <!-- Compra Niñas de 2 a 10 -->
+            <div class="entrada-edades">
+              <!-- Contenedor Img-->
+              <div class="imgContainer">
+                <img src="images/CompraNina.jpg" alt="Bebe en brazos">
+              </div>
+              <!-- Finaliza Contenedor Img-->
+              <h2>Niñas</h2>
+              <p>2 - 10 AÑOS</p>
+              <a href class="boton back4" type="button">Ver +</a>
+            </div>
+            <!-- Finaliza Compra Niñas de 2 a 10 -->
+
+            <!-- Compra Niños de 2 a 10 -->
+            <div class="entrada-edades">
+              <!-- Contenedor Img-->
+              <div class="imgContainer">
+                <img src="images/CompraNino.jpg" alt="Bebe en brazos">
+              </div>
+              <!-- Finaliza Contenedor Img-->
+              <h2>Niños</h2>
+              <p>2 - 10 AÑOS</p>
+              <a href class="boton back4" type="button">Ver +</a>
+            </div>
+            <!-- Finaliza Compra Niños de 2 a 10 -->
+
+          </div>
+          <!-- Finaliza Row div -->
+        </section>  
+        <!-- Finaliza Compra por edades -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+
+
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- Destacadas del Mes-->
+        <section id="wrap-categorias-destacadas" class="container-fluid" >
+          <h2 class="titulo-seccion">Categorías destacadas del mes</h2>
+          <div id="categorias-destacadas">
+
+            <!-- Destacada 1-->
+            <div class="area-destacada-1 area-destacada-cont">
+
+              <div class="wrap-info-area-destacada">
+                <h3>Maternidad</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer</p>
+                <a href="" class="boton back5">Ver +</a>
+              </div>
+              <div class="over-thumb"></div>
+              <img src="images/Grupo 121.jpg" alt="">
+            </div>
+
+            <!-- Destacada 2-->
+            <div class="area-destacada-2 area-destacada-cont">
+              <div class="wrap-info-area-destacada">
+                <h3>Habitación</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer</p>
+                <a href="" class="boton back1">Ver +</a>
+              </div>
+              <div class="over-thumb"></div>
+              <img src="images/Grupo 108.jpg" alt="">
+            </div>
+
+            <!-- Destacada 3-->
+            <div class="area-destacada-3 area-destacada-cont">
+              <div class="wrap-info-area-destacada">
+                <h3>Cuidado personal</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer</p>
+                <a href="" class="boton back2">Ver +</a>
+              </div>
+              <div class="over-thumb"></div>
+              <img src="images/Grupo 134.jpg" alt="">
+            </div>
+
+          </div>
+        </section>
+        <!-- Finaliza Destacadas del Mes -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+
+
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- Nuevos productos por categoría -->
+        <section id="wrap-productos-categoria-index">
+          <h2 class="titulo-seccion">Nuevos productos por categorías</h2> 
+          <div id="productos-categoria-index">
+
+            <!-- Navegador de categorías -->
+            <nav>
+              <div id="nav-tab-categorias">
+                <button class="enlaceCategorias enlaceCategoriasActivo" id="nav-todos-tab" data-bs-target="#nav-todos" type="button">Todos</button>
+                <button class="enlaceCategorias" id="nav-moda-tab" data-bs-target="#nav-moda" type="button">Moda</button>
+                <button class="enlaceCategorias" id="nav-accesorios-tab" data-bs-target="#nav-accesorios" type="button">Accesorios</button>
+                <button class="enlaceCategorias" id="nav-alimentacion-tab" data-bs-target="#nav-alimentacion" type="button">Alimentacion</button>
+                <button class="enlaceCategorias" id="nav-juguetes-tab" data-bs-target="#nav-juguetes" type="button">Juguetes</button>
+                <button class="enlaceCategorias" id="nav-cuidado-tab" data-bs-target="#nav-cuidado" type="button">Cuidado</button>
+                <button class="enlaceCategorias" id="nav-mama-tab" data-bs-target="#nav-mama" type="button">Mamá</button>
+                <button class="enlaceCategorias" id="nav-fiestas-tab" data-bs-target="#nav-fiestas" type="button">Fiestas</button>
+              </div>
+            </nav>
+            <!-- Fin Navegador de categorías -->
+
+            <!-- Contenedor de tabs de productos TODOS-->
+            <div id="nav-tabContent">
+              <!-- tabs de productos -->
+              <div class="tab-categoria" id="nav-todos" role="tabpanel" aria-labelledby="nav-todos-tab">
+
+                <img src="images/arrow-left.svg" class="flecha-left-slider" id="flecha-left-carrusel-todos">
+                <img src="images/arrow-right.svg" class="flecha-right-slider" id="flecha-right-carrusel-todos">
+
+                <!-- carrusel todos -->
+                <div class="carrusel-articulos" id="carrusel-todos">
+
+                    <!-- Producto -->
+                    <div class="wrap-articulo-carrusel">
+                      <a href class="thumb-articulo-carrusel">
+                        <div class="favorite-icon-thumb-articulo-carrusel">
+                          <span class="material-icons">favorite</span>
+                        </div>  
+                        <img src="images/Grupo 154.jpg" alt="">
+                      </a>
+                      <div class="info-articulo-carrusel">
+                        <h4 class="cat-articulo-carrusel">Categoria</h4>
+                        <a href="" class="nombre-articulo-carrusel"><h3>Nombre del producto</h3></a>
+                        <span class="precio-articulo-carrusel">$500.000</span>
+                        
+                        <div class="wrap-evaluacion-articulo-carrusel">
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons half-star">star_half</span>
+                          <span class="material-icons no-star">star_outline</span>
+                        </div>
+
+                        <a href="" class="boton back5">COMPRAR</a>
+
+                      </div>
+                    </div>
+                    <!-- Fin del Producto --------- -->
+
+                    <!-- Producto -->
+                    <div class="wrap-articulo-carrusel">
+                      <a href class="thumb-articulo-carrusel">
+                        <div class="favorite-icon-thumb-articulo-carrusel">
+                          <span class="material-icons">favorite</span>
+                        </div>  
+                        <img src="images/Grupo 154.jpg" alt="">
+                      </a>
+                      <div class="info-articulo-carrusel">
+                        <h4 class="cat-articulo-carrusel">Categoria</h4>
+                        <a href="" class="nombre-articulo-carrusel"><h3>Nombre del producto</h3></a>
+                        <span class="precio-articulo-carrusel">$500.000</span>
+                        
+                        <div class="wrap-evaluacion-articulo-carrusel">
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons half-star">star_half</span>
+                          <span class="material-icons no-star">star_outline</span>
+                        </div>
+
+                        <a href="" class="boton back5">COMPRAR</a>
+
+                      </div>
+                    </div>
+                    <!-- Fin del Producto --------- -->
+
+                    <!-- Producto -->
+                    <div class="wrap-articulo-carrusel">
+                      <a href class="thumb-articulo-carrusel">
+                        <div class="favorite-icon-thumb-articulo-carrusel">
+                          <span class="material-icons">favorite</span>
+                        </div>  
+                        <img src="images/Grupo 154.jpg" alt="">
+                      </a>
+                      <div class="info-articulo-carrusel">
+                        <h4 class="cat-articulo-carrusel">Categoria</h4>
+                        <a href="" class="nombre-articulo-carrusel"><h3>Nombre del producto</h3></a>
+                        <span class="precio-articulo-carrusel">$500.000</span>
+                        
+                        <div class="wrap-evaluacion-articulo-carrusel">
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons half-star">star_half</span>
+                          <span class="material-icons no-star">star_outline</span>
+                        </div>
+
+                        <a href="" class="boton back5">COMPRAR</a>
+
+                      </div>
+                    </div>
+                    <!-- Fin del Producto --------- -->
+
+
+                    <!-- Producto -->
+                    <div class="wrap-articulo-carrusel">
+                      <a href class="thumb-articulo-carrusel">
+                        <div class="favorite-icon-thumb-articulo-carrusel">
+                          <span class="material-icons">favorite</span>
+                        </div>  
+                        <img src="images/Grupo 154.jpg" alt="">
+                      </a>
+                      <div class="info-articulo-carrusel">
+                        <h4 class="cat-articulo-carrusel">Categoria</h4>
+                        <a href="" class="nombre-articulo-carrusel"><h3>Nombre del producto</h3></a>
+                        <span class="precio-articulo-carrusel">$500.000</span>
+                        
+                        <div class="wrap-evaluacion-articulo-carrusel">
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons half-star">star_half</span>
+                          <span class="material-icons no-star">star_outline</span>
+                        </div>
+
+                        <a href="" class="boton back5">COMPRAR</a>
+
+                      </div>
+                    </div>
+                    <!-- Fin del Producto --------- -->
+
+                </div>
+                <!-- Fin carrusel todos -->
+
+              </div>
+              <!-- fin tabs de productos TODOS-->
+              <!-- **** -->
+
+
+              <!-- tabs de productos MODA -->
+              <div class="tab-categoria" id="nav-moda" role="tabpanel" aria-labelledby="nav-moda-tab">
+
+                <img src="images/arrow-left.svg" class="flecha-left-slider" id="flecha-left-carrusel-moda">
+                <img src="images/arrow-right.svg" class="flecha-right-slider" id="flecha-right-carrusel-moda">
+
+                <!-- carrusel moda -->
+                <div class="carrusel-articulos" id="carrusel-moda">
+
+                    <!-- Producto -->
+                    <div class="wrap-articulo-carrusel">
+                      <a href class="thumb-articulo-carrusel">
+                        <div class="favorite-icon-thumb-articulo-carrusel">
+                          <span class="material-icons">favorite</span>
+                        </div>  
+                        <img src="images/Grupo 162.jpg" alt="">
+                      </a>
+                      <div class="info-articulo-carrusel">
+                        <h4 class="cat-articulo-carrusel">Categoria</h4>
+                        <a href="" class="nombre-articulo-carrusel"><h3>Nombre del producto</h3></a>
+                        <span class="precio-articulo-carrusel">$500.000</span>
+                        
+                        <div class="wrap-evaluacion-articulo-carrusel">
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons half-star">star_half</span>
+                          <span class="material-icons no-star">star_outline</span>
+                        </div>
+
+                        <a href="" class="boton back5">COMPRAR</a>
+
+                      </div>
+                    </div>
+                    <!-- Fin del Producto --------- -->
+
+                    <!-- Producto -->
+                    <div class="wrap-articulo-carrusel">
+                      <a href class="thumb-articulo-carrusel">
+                        <div class="favorite-icon-thumb-articulo-carrusel">
+                          <span class="material-icons">favorite</span>
+                        </div>  
+                        <img src="images/Grupo 162.jpg" alt="">
+                      </a>
+                      <div class="info-articulo-carrusel">
+                        <h4 class="cat-articulo-carrusel">Categoria</h4>
+                        <a href="" class="nombre-articulo-carrusel"><h3>Nombre del producto</h3></a>
+                        <span class="precio-articulo-carrusel">$500.000</span>
+                        
+                        <div class="wrap-evaluacion-articulo-carrusel">
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons half-star">star_half</span>
+                          <span class="material-icons no-star">star_outline</span>
+                        </div>
+
+                        <a href="" class="boton back5">COMPRAR</a>
+
+                      </div>
+                    </div>
+                    <!-- Fin del Producto --------- -->
+
+                    <!-- Producto -->
+                    <div class="wrap-articulo-carrusel">
+                      <a href class="thumb-articulo-carrusel">
+                        <div class="favorite-icon-thumb-articulo-carrusel">
+                          <span class="material-icons">favorite</span>
+                        </div>  
+                        <img src="images/Grupo 162.jpg" alt="">
+                      </a>
+                      <div class="info-articulo-carrusel">
+                        <h4 class="cat-articulo-carrusel">Categoria</h4>
+                        <a href="" class="nombre-articulo-carrusel"><h3>Nombre del producto</h3></a>
+                        <span class="precio-articulo-carrusel">$500.000</span>
+                        
+                        <div class="wrap-evaluacion-articulo-carrusel">
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons half-star">star_half</span>
+                          <span class="material-icons no-star">star_outline</span>
+                        </div>
+
+                        <a href="" class="boton back5">COMPRAR</a>
+
+                      </div>
+                    </div>
+                    <!-- Fin del Producto --------- -->
+
+
+                    <!-- Producto -->
+                    <div class="wrap-articulo-carrusel">
+                      <a href class="thumb-articulo-carrusel">
+                        <div class="favorite-icon-thumb-articulo-carrusel">
+                          <span class="material-icons">favorite</span>
+                        </div>  
+                        <img src="images/Grupo 162.jpg" alt="">
+                      </a>
+                      <div class="info-articulo-carrusel">
+                        <h4 class="cat-articulo-carrusel">Categoria</h4>
+                        <a href="" class="nombre-articulo-carrusel"><h3>Nombre del producto</h3></a>
+                        <span class="precio-articulo-carrusel">$500.000</span>
+                        
+                        <div class="wrap-evaluacion-articulo-carrusel">
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons half-star">star_half</span>
+                          <span class="material-icons no-star">star_outline</span>
+                        </div>
+
+                        <a href="" class="boton back5">COMPRAR</a>
+
+                      </div>
+                    </div>
+                    <!-- Fin del Producto --------- -->
+
+                </div>
+                <!-- Fin carrusel moda --> 
+
+
+
+              </div>
+              <!-- fin tabs de productos MODA-->
+              <!-- **** -->
+
+
+              <!-- tabs de productos ACCESORIOS -->
+              <div class="tab-categoria" id="nav-accesorios" role="tabpanel" aria-labelledby="nav-accesorios-tab">
+
+                <img src="images/arrow-left.svg" class="flecha-left-slider" id="flecha-left-carrusel-accesorios">
+                <img src="images/arrow-right.svg" class="flecha-right-slider" id="flecha-right-carrusel-accesorios">
+
+                <!-- carrusel todos -->
+                <div class="carrusel-articulos" id="carrusel-accesorios">
+
+                    <!-- Producto -->
+                    <div class="wrap-articulo-carrusel">
+                      <a href class="thumb-articulo-carrusel">
+                        <div class="favorite-icon-thumb-articulo-carrusel">
+                          <span class="material-icons">favorite</span>
+                        </div>  
+                        <img src="images/Grupo 154.jpg" alt="">
+                      </a>
+                      <div class="info-articulo-carrusel">
+                        <h4 class="cat-articulo-carrusel">Categoria</h4>
+                        <a href="" class="nombre-articulo-carrusel"><h3>Nombre del producto</h3></a>
+                        <span class="precio-articulo-carrusel">$500.000</span>
+                        
+                        <div class="wrap-evaluacion-articulo-carrusel">
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons half-star">star_half</span>
+                          <span class="material-icons no-star">star_outline</span>
+                        </div>
+
+                        <a href="" class="boton back5">COMPRAR</a>
+
+                      </div>
+                    </div>
+                    <!-- Fin del Producto --------- -->
+
+                    <!-- Producto -->
+                    <div class="wrap-articulo-carrusel">
+                      <a href class="thumb-articulo-carrusel">
+                        <div class="favorite-icon-thumb-articulo-carrusel">
+                          <span class="material-icons">favorite</span>
+                        </div>  
+                        <img src="images/Grupo 154.jpg" alt="">
+                      </a>
+                      <div class="info-articulo-carrusel">
+                        <h4 class="cat-articulo-carrusel">Categoria</h4>
+                        <a href="" class="nombre-articulo-carrusel"><h3>Nombre del producto</h3></a>
+                        <span class="precio-articulo-carrusel">$500.000</span>
+                        
+                        <div class="wrap-evaluacion-articulo-carrusel">
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons half-star">star_half</span>
+                          <span class="material-icons no-star">star_outline</span>
+                        </div>
+
+                        <a href="" class="boton back5">COMPRAR</a>
+
+                      </div>
+                    </div>
+                    <!-- Fin del Producto --------- -->
+
+                    <!-- Producto -->
+                    <div class="wrap-articulo-carrusel">
+                      <a href class="thumb-articulo-carrusel">
+                        <div class="favorite-icon-thumb-articulo-carrusel">
+                          <span class="material-icons">favorite</span>
+                        </div>  
+                        <img src="images/Grupo 154.jpg" alt="">
+                      </a>
+                      <div class="info-articulo-carrusel">
+                        <h4 class="cat-articulo-carrusel">Categoria</h4>
+                        <a href="" class="nombre-articulo-carrusel"><h3>Nombre del producto</h3></a>
+                        <span class="precio-articulo-carrusel">$500.000</span>
+                        
+                        <div class="wrap-evaluacion-articulo-carrusel">
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons half-star">star_half</span>
+                          <span class="material-icons no-star">star_outline</span>
+                        </div>
+
+                        <a href="" class="boton back5">COMPRAR</a>
+
+                      </div>
+                    </div>
+                    <!-- Fin del Producto --------- -->
+
+
+                    <!-- Producto -->
+                    <div class="wrap-articulo-carrusel">
+                      <a href class="thumb-articulo-carrusel">
+                        <div class="favorite-icon-thumb-articulo-carrusel">
+                          <span class="material-icons">favorite</span>
+                        </div>  
+                        <img src="images/Grupo 154.jpg" alt="">
+                      </a>
+                      <div class="info-articulo-carrusel">
+                        <h4 class="cat-articulo-carrusel">Categoria</h4>
+                        <a href="" class="nombre-articulo-carrusel"><h3>Nombre del producto</h3></a>
+                        <span class="precio-articulo-carrusel">$500.000</span>
+                        
+                        <div class="wrap-evaluacion-articulo-carrusel">
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons half-star">star_half</span>
+                          <span class="material-icons no-star">star_outline</span>
+                        </div>
+
+                        <a href="" class="boton back5">COMPRAR</a>
+
+                      </div>
+                    </div>
+                    <!-- Fin del Producto --------- -->
+
+                </div>
+                <!-- Fin carrusel accesorios -->
+
+              </div>
+              <!-- fin tabs de productos ACCESORIOS-->
+              <!-- **** -->
+
+
+              <!-- tabs de productos ALIMENTACION-->
+              <div class="tab-categoria" id="nav-alimentacion" role="tabpanel" aria-labelledby="nav-alimentacion-tab">
+
+                <img src="images/arrow-left.svg" class="flecha-left-slider" id="flecha-left-carrusel-alimentacion">
+                <img src="images/arrow-right.svg" class="flecha-right-slider" id="flecha-right-carrusel-alimentacion">
+
+                <!-- carrusel alimentacion -->
+                <div class="carrusel-articulos" id="carrusel-alimentacion">
+
+                    <!-- Producto -->
+                    <div class="wrap-articulo-carrusel">
+                      <a href class="thumb-articulo-carrusel">
+                        <div class="favorite-icon-thumb-articulo-carrusel">
+                          <span class="material-icons">favorite</span>
+                        </div>  
+                        <img src="images/Grupo 162.jpg" alt="">
+                      </a>
+                      <div class="info-articulo-carrusel">
+                        <h4 class="cat-articulo-carrusel">Categoria</h4>
+                        <a href="" class="nombre-articulo-carrusel"><h3>Nombre del producto</h3></a>
+                        <span class="precio-articulo-carrusel">$500.000</span>
+                        
+                        <div class="wrap-evaluacion-articulo-carrusel">
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons half-star">star_half</span>
+                          <span class="material-icons no-star">star_outline</span>
+                        </div>
+
+                        <a href="" class="boton back5">COMPRAR</a>
+
+                      </div>
+                    </div>
+                    <!-- Fin del Producto --------- -->
+
+                    <!-- Producto -->
+                    <div class="wrap-articulo-carrusel">
+                      <a href class="thumb-articulo-carrusel">
+                        <div class="favorite-icon-thumb-articulo-carrusel">
+                          <span class="material-icons">favorite</span>
+                        </div>  
+                        <img src="images/Grupo 162.jpg" alt="">
+                      </a>
+                      <div class="info-articulo-carrusel">
+                        <h4 class="cat-articulo-carrusel">Categoria</h4>
+                        <a href="" class="nombre-articulo-carrusel"><h3>Nombre del producto</h3></a>
+                        <span class="precio-articulo-carrusel">$500.000</span>
+                        
+                        <div class="wrap-evaluacion-articulo-carrusel">
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons half-star">star_half</span>
+                          <span class="material-icons no-star">star_outline</span>
+                        </div>
+
+                        <a href="" class="boton back5">COMPRAR</a>
+
+                      </div>
+                    </div>
+                    <!-- Fin del Producto --------- -->
+
+                    <!-- Producto -->
+                    <div class="wrap-articulo-carrusel">
+                      <a href class="thumb-articulo-carrusel">
+                        <div class="favorite-icon-thumb-articulo-carrusel">
+                          <span class="material-icons">favorite</span>
+                        </div>  
+                        <img src="images/Grupo 162.jpg" alt="">
+                      </a>
+                      <div class="info-articulo-carrusel">
+                        <h4 class="cat-articulo-carrusel">Categoria</h4>
+                        <a href="" class="nombre-articulo-carrusel"><h3>Nombre del producto</h3></a>
+                        <span class="precio-articulo-carrusel">$500.000</span>
+                        
+                        <div class="wrap-evaluacion-articulo-carrusel">
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons half-star">star_half</span>
+                          <span class="material-icons no-star">star_outline</span>
+                        </div>
+
+                        <a href="" class="boton back5">COMPRAR</a>
+
+                      </div>
+                    </div>
+                    <!-- Fin del Producto --------- -->
+
+
+                    <!-- Producto -->
+                    <div class="wrap-articulo-carrusel">
+                      <a href class="thumb-articulo-carrusel">
+                        <div class="favorite-icon-thumb-articulo-carrusel">
+                          <span class="material-icons">favorite</span>
+                        </div>  
+                        <img src="images/Grupo 162.jpg" alt="">
+                      </a>
+                      <div class="info-articulo-carrusel">
+                        <h4 class="cat-articulo-carrusel">Categoria</h4>
+                        <a href="" class="nombre-articulo-carrusel"><h3>Nombre del producto</h3></a>
+                        <span class="precio-articulo-carrusel">$500.000</span>
+                        
+                        <div class="wrap-evaluacion-articulo-carrusel">
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons half-star">star_half</span>
+                          <span class="material-icons no-star">star_outline</span>
+                        </div>
+
+                        <a href="" class="boton back5">COMPRAR</a>
+
+                      </div>
+                    </div>
+                    <!-- Fin del Producto --------- -->
+
+                </div>
+                <!-- Fin carrusel alimentacion --> 
+              </div>
+              <!-- fin tabs de productos ALIMENTACION-->
+              <!-- **** -->
+
+
+              <!-- tabs de productos JUGUETES-->
+              <div class="tab-categoria" id="nav-juguetes" role="tabpanel" aria-labelledby="nav-juguetes-tab">
+                
+                <img src="images/arrow-left.svg" class="flecha-left-slider" id="flecha-left-carrusel-juguetes">
+                <img src="images/arrow-right.svg" class="flecha-right-slider" id="flecha-right-carrusel-juguetes">
+
+                <!-- carrusel juegetes -->
+                <div class="carrusel-articulos" id="carrusel-juguetes">
+
+                    <!-- Producto -->
+                    <div class="wrap-articulo-carrusel">
+                      <a href class="thumb-articulo-carrusel">
+                        <div class="favorite-icon-thumb-articulo-carrusel">
+                          <span class="material-icons">favorite</span>
+                        </div>  
+                        <img src="images/Grupo 162.jpg" alt="">
+                      </a>
+                      <div class="info-articulo-carrusel">
+                        <h4 class="cat-articulo-carrusel">Categoria</h4>
+                        <a href="" class="nombre-articulo-carrusel"><h3>Nombre del producto</h3></a>
+                        <span class="precio-articulo-carrusel">$500.000</span>
+                        
+                        <div class="wrap-evaluacion-articulo-carrusel">
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons half-star">star_half</span>
+                          <span class="material-icons no-star">star_outline</span>
+                        </div>
+
+                        <a href="" class="boton back5">COMPRAR</a>
+
+                      </div>
+                    </div>
+                    <!-- Fin del Producto --------- -->
+
+                    <!-- Producto -->
+                    <div class="wrap-articulo-carrusel">
+                      <a href class="thumb-articulo-carrusel">
+                        <div class="favorite-icon-thumb-articulo-carrusel">
+                          <span class="material-icons">favorite</span>
+                        </div>  
+                        <img src="images/Grupo 162.jpg" alt="">
+                      </a>
+                      <div class="info-articulo-carrusel">
+                        <h4 class="cat-articulo-carrusel">Categoria</h4>
+                        <a href="" class="nombre-articulo-carrusel"><h3>Nombre del producto</h3></a>
+                        <span class="precio-articulo-carrusel">$500.000</span>
+                        
+                        <div class="wrap-evaluacion-articulo-carrusel">
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons half-star">star_half</span>
+                          <span class="material-icons no-star">star_outline</span>
+                        </div>
+
+                        <a href="" class="boton back5">COMPRAR</a>
+
+                      </div>
+                    </div>
+                    <!-- Fin del Producto --------- -->
+
+                    <!-- Producto -->
+                    <div class="wrap-articulo-carrusel">
+                      <a href class="thumb-articulo-carrusel">
+                        <div class="favorite-icon-thumb-articulo-carrusel">
+                          <span class="material-icons">favorite</span>
+                        </div>  
+                        <img src="images/Grupo 162.jpg" alt="">
+                      </a>
+                      <div class="info-articulo-carrusel">
+                        <h4 class="cat-articulo-carrusel">Categoria</h4>
+                        <a href="" class="nombre-articulo-carrusel"><h3>Nombre del producto</h3></a>
+                        <span class="precio-articulo-carrusel">$500.000</span>
+                        
+                        <div class="wrap-evaluacion-articulo-carrusel">
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons half-star">star_half</span>
+                          <span class="material-icons no-star">star_outline</span>
+                        </div>
+
+                        <a href="" class="boton back5">COMPRAR</a>
+
+                      </div>
+                    </div>
+                    <!-- Fin del Producto --------- -->
+
+
+                    <!-- Producto -->
+                    <div class="wrap-articulo-carrusel">
+                      <a href class="thumb-articulo-carrusel">
+                        <div class="favorite-icon-thumb-articulo-carrusel">
+                          <span class="material-icons">favorite</span>
+                        </div>  
+                        <img src="images/Grupo 162.jpg" alt="">
+                      </a>
+                      <div class="info-articulo-carrusel">
+                        <h4 class="cat-articulo-carrusel">Categoria</h4>
+                        <a href="" class="nombre-articulo-carrusel"><h3>Nombre del producto</h3></a>
+                        <span class="precio-articulo-carrusel">$500.000</span>
+                        
+                        <div class="wrap-evaluacion-articulo-carrusel">
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons half-star">star_half</span>
+                          <span class="material-icons no-star">star_outline</span>
+                        </div>
+
+                        <a href="" class="boton back5">COMPRAR</a>
+
+                      </div>
+                    </div>
+                    <!-- Fin del Producto --------- -->
+
+                </div>
+                <!-- Fin carrusel juegetes -->  
+
+
+              </div>
+              <!-- fin tabs de productos JUGUETES-->
+              <!-- **** -->
+
+
+              <!-- tabs de productos CUIDADO -->
+              <div class="tab-pane fade tab-categoria" id="nav-cuidado" role="tabpanel" aria-labelledby="nav-cuidado-tab">
+                <img src="images/arrow-left.svg" class="flecha-left-slider" id="flecha-left-carrusel-cuidado">
+                <img src="images/arrow-right.svg" class="flecha-right-slider" id="flecha-right-carrusel-cuidado">
+
+                <!-- carrusel todos -->
+                <div class="carrusel-articulos" id="carrusel-cuidado">
+
+                    <!-- Producto -->
+                    <div class="wrap-articulo-carrusel">
+                      <a href class="thumb-articulo-carrusel">
+                        <div class="favorite-icon-thumb-articulo-carrusel">
+                          <span class="material-icons">favorite</span>
+                        </div>  
+                        <img src="images/Grupo 154.jpg" alt="">
+                      </a>
+                      <div class="info-articulo-carrusel">
+                        <h4 class="cat-articulo-carrusel">Categoria</h4>
+                        <a href="" class="nombre-articulo-carrusel"><h3>Nombre del producto</h3></a>
+                        <span class="precio-articulo-carrusel">$500.000</span>
+                        
+                        <div class="wrap-evaluacion-articulo-carrusel">
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons half-star">star_half</span>
+                          <span class="material-icons no-star">star_outline</span>
+                        </div>
+
+                        <a href="" class="boton back5">COMPRAR</a>
+
+                      </div>
+                    </div>
+                    <!-- Fin del Producto --------- -->
+
+                    <!-- Producto -->
+                    <div class="wrap-articulo-carrusel">
+                      <a href class="thumb-articulo-carrusel">
+                        <div class="favorite-icon-thumb-articulo-carrusel">
+                          <span class="material-icons">favorite</span>
+                        </div>  
+                        <img src="images/Grupo 154.jpg" alt="">
+                      </a>
+                      <div class="info-articulo-carrusel">
+                        <h4 class="cat-articulo-carrusel">Categoria</h4>
+                        <a href="" class="nombre-articulo-carrusel"><h3>Nombre del producto</h3></a>
+                        <span class="precio-articulo-carrusel">$500.000</span>
+                        
+                        <div class="wrap-evaluacion-articulo-carrusel">
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons half-star">star_half</span>
+                          <span class="material-icons no-star">star_outline</span>
+                        </div>
+
+                        <a href="" class="boton back5">COMPRAR</a>
+
+                      </div>
+                    </div>
+                    <!-- Fin del Producto --------- -->
+
+                    <!-- Producto -->
+                    <div class="wrap-articulo-carrusel">
+                      <a href class="thumb-articulo-carrusel">
+                        <div class="favorite-icon-thumb-articulo-carrusel">
+                          <span class="material-icons">favorite</span>
+                        </div>  
+                        <img src="images/Grupo 154.jpg" alt="">
+                      </a>
+                      <div class="info-articulo-carrusel">
+                        <h4 class="cat-articulo-carrusel">Categoria</h4>
+                        <a href="" class="nombre-articulo-carrusel"><h3>Nombre del producto</h3></a>
+                        <span class="precio-articulo-carrusel">$500.000</span>
+                        
+                        <div class="wrap-evaluacion-articulo-carrusel">
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons half-star">star_half</span>
+                          <span class="material-icons no-star">star_outline</span>
+                        </div>
+
+                        <a href="" class="boton back5">COMPRAR</a>
+
+                      </div>
+                    </div>
+                    <!-- Fin del Producto --------- -->
+
+
+                    <!-- Producto -->
+                    <div class="wrap-articulo-carrusel">
+                      <a href class="thumb-articulo-carrusel">
+                        <div class="favorite-icon-thumb-articulo-carrusel">
+                          <span class="material-icons">favorite</span>
+                        </div>  
+                        <img src="images/Grupo 154.jpg" alt="">
+                      </a>
+                      <div class="info-articulo-carrusel">
+                        <h4 class="cat-articulo-carrusel">Categoria</h4>
+                        <a href="" class="nombre-articulo-carrusel"><h3>Nombre del producto</h3></a>
+                        <span class="precio-articulo-carrusel">$500.000</span>
+                        
+                        <div class="wrap-evaluacion-articulo-carrusel">
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons half-star">star_half</span>
+                          <span class="material-icons no-star">star_outline</span>
+                        </div>
+
+                        <a href="" class="boton back5">COMPRAR</a>
+
+                      </div>
+                    </div>
+                    <!-- Fin del Producto --------- -->
+
+                </div>
+                <!-- Fin carrusel cuidado -->
+              </div>
+              <!-- fin tabs de productos CUIDADO-->
+              <!-- **** -->
+
+
+              <!-- tabs de productos MAMA-->
+              <div class="tab-pane fade tab-categoria" id="nav-mama" role="tabpanel" aria-labelledby="nav-mama-tab">
+
+                <img src="images/arrow-left.svg" class="flecha-left-slider" id="flecha-left-carrusel-mama">
+                <img src="images/arrow-right.svg" class="flecha-right-slider" id="flecha-right-carrusel-mama">
+
+                <!-- carrusel mama -->
+                <div class="carrusel-articulos" id="carrusel-mama">
+
+                    <!-- Producto -->
+                    <div class="wrap-articulo-carrusel">
+                      <a href class="thumb-articulo-carrusel">
+                        <div class="favorite-icon-thumb-articulo-carrusel">
+                          <span class="material-icons">favorite</span>
+                        </div>  
+                        <img src="images/Grupo 162.jpg" alt="">
+                      </a>
+                      <div class="info-articulo-carrusel">
+                        <h4 class="cat-articulo-carrusel">Categoria</h4>
+                        <a href="" class="nombre-articulo-carrusel"><h3>Nombre del producto</h3></a>
+                        <span class="precio-articulo-carrusel">$500.000</span>
+                        
+                        <div class="wrap-evaluacion-articulo-carrusel">
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons half-star">star_half</span>
+                          <span class="material-icons no-star">star_outline</span>
+                        </div>
+
+                        <a href="" class="boton back5">COMPRAR</a>
+
+                      </div>
+                    </div>
+                    <!-- Fin del Producto --------- -->
+
+                    <!-- Producto -->
+                    <div class="wrap-articulo-carrusel">
+                      <a href class="thumb-articulo-carrusel">
+                        <div class="favorite-icon-thumb-articulo-carrusel">
+                          <span class="material-icons">favorite</span>
+                        </div>  
+                        <img src="images/Grupo 162.jpg" alt="">
+                      </a>
+                      <div class="info-articulo-carrusel">
+                        <h4 class="cat-articulo-carrusel">Categoria</h4>
+                        <a href="" class="nombre-articulo-carrusel"><h3>Nombre del producto</h3></a>
+                        <span class="precio-articulo-carrusel">$500.000</span>
+                        
+                        <div class="wrap-evaluacion-articulo-carrusel">
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons half-star">star_half</span>
+                          <span class="material-icons no-star">star_outline</span>
+                        </div>
+
+                        <a href="" class="boton back5">COMPRAR</a>
+
+                      </div>
+                    </div>
+                    <!-- Fin del Producto --------- -->
+
+                    <!-- Producto -->
+                    <div class="wrap-articulo-carrusel">
+                      <a href class="thumb-articulo-carrusel">
+                        <div class="favorite-icon-thumb-articulo-carrusel">
+                          <span class="material-icons">favorite</span>
+                        </div>  
+                        <img src="images/Grupo 162.jpg" alt="">
+                      </a>
+                      <div class="info-articulo-carrusel">
+                        <h4 class="cat-articulo-carrusel">Categoria</h4>
+                        <a href="" class="nombre-articulo-carrusel"><h3>Nombre del producto</h3></a>
+                        <span class="precio-articulo-carrusel">$500.000</span>
+                        
+                        <div class="wrap-evaluacion-articulo-carrusel">
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons half-star">star_half</span>
+                          <span class="material-icons no-star">star_outline</span>
+                        </div>
+
+                        <a href="" class="boton back5">COMPRAR</a>
+
+                      </div>
+                    </div>
+                    <!-- Fin del Producto --------- -->
+
+
+                    <!-- Producto -->
+                    <div class="wrap-articulo-carrusel">
+                      <a href class="thumb-articulo-carrusel">
+                        <div class="favorite-icon-thumb-articulo-carrusel">
+                          <span class="material-icons">favorite</span>
+                        </div>  
+                        <img src="images/Grupo 162.jpg" alt="">
+                      </a>
+                      <div class="info-articulo-carrusel">
+                        <h4 class="cat-articulo-carrusel">Categoria</h4>
+                        <a href="" class="nombre-articulo-carrusel"><h3>Nombre del producto</h3></a>
+                        <span class="precio-articulo-carrusel">$500.000</span>
+                        
+                        <div class="wrap-evaluacion-articulo-carrusel">
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons half-star">star_half</span>
+                          <span class="material-icons no-star">star_outline</span>
+                        </div>
+
+                        <a href="" class="boton back5">COMPRAR</a>
+
+                      </div>
+                    </div>
+                    <!-- Fin del Producto --------- -->
+
+                </div>
+                <!-- Fin carrusel mama -->  
+              </div>
+              <!-- fin tabs de productos MAMA-->
+              <!-- **** -->
+
+
+              <!-- tabs de productos FIESTAS-->
+              <div class="tab-pane fade tab-categoria" id="nav-fiestas" role="tabpanel" aria-labelledby="nav-fiestas-tab">
+                <img src="images/arrow-left.svg" class="flecha-left-slider" id="flecha-left-carrusel-fiestas">
+                <img src="images/arrow-right.svg" class="flecha-right-slider" id="flecha-right-carrusel-fiestas">
+
+                <!-- carrusel todos -->
+                <div class="carrusel-articulos" id="carrusel-fiestas">
+
+                    <!-- Producto -->
+                    <div class="wrap-articulo-carrusel">
+                      <a href class="thumb-articulo-carrusel">
+                        <div class="favorite-icon-thumb-articulo-carrusel">
+                          <span class="material-icons">favorite</span>
+                        </div>  
+                        <img src="images/Grupo 154.jpg" alt="">
+                      </a>
+                      <div class="info-articulo-carrusel">
+                        <h4 class="cat-articulo-carrusel">Categoria</h4>
+                        <a href="" class="nombre-articulo-carrusel"><h3>Nombre del producto</h3></a>
+                        <span class="precio-articulo-carrusel">$500.000</span>
+                        
+                        <div class="wrap-evaluacion-articulo-carrusel">
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons half-star">star_half</span>
+                          <span class="material-icons no-star">star_outline</span>
+                        </div>
+
+                        <a href="" class="boton back5">COMPRAR</a>
+
+                      </div>
+                    </div>
+                    <!-- Fin del Producto --------- -->
+
+                    <!-- Producto -->
+                    <div class="wrap-articulo-carrusel">
+                      <a href class="thumb-articulo-carrusel">
+                        <div class="favorite-icon-thumb-articulo-carrusel">
+                          <span class="material-icons">favorite</span>
+                        </div>  
+                        <img src="images/Grupo 154.jpg" alt="">
+                      </a>
+                      <div class="info-articulo-carrusel">
+                        <h4 class="cat-articulo-carrusel">Categoria</h4>
+                        <a href="" class="nombre-articulo-carrusel"><h3>Nombre del producto</h3></a>
+                        <span class="precio-articulo-carrusel">$500.000</span>
+                        
+                        <div class="wrap-evaluacion-articulo-carrusel">
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons half-star">star_half</span>
+                          <span class="material-icons no-star">star_outline</span>
+                        </div>
+
+                        <a href="" class="boton back5">COMPRAR</a>
+
+                      </div>
+                    </div>
+                    <!-- Fin del Producto --------- -->
+
+                    <!-- Producto -->
+                    <div class="wrap-articulo-carrusel">
+                      <a href class="thumb-articulo-carrusel">
+                        <div class="favorite-icon-thumb-articulo-carrusel">
+                          <span class="material-icons">favorite</span>
+                        </div>  
+                        <img src="images/Grupo 154.jpg" alt="">
+                      </a>
+                      <div class="info-articulo-carrusel">
+                        <h4 class="cat-articulo-carrusel">Categoria</h4>
+                        <a href="" class="nombre-articulo-carrusel"><h3>Nombre del producto</h3></a>
+                        <span class="precio-articulo-carrusel">$500.000</span>
+                        
+                        <div class="wrap-evaluacion-articulo-carrusel">
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons half-star">star_half</span>
+                          <span class="material-icons no-star">star_outline</span>
+                        </div>
+
+                        <a href="" class="boton back5">COMPRAR</a>
+
+                      </div>
+                    </div>
+                    <!-- Fin del Producto --------- -->
+
+
+                    <!-- Producto -->
+                    <div class="wrap-articulo-carrusel">
+                      <a href class="thumb-articulo-carrusel">
+                        <div class="favorite-icon-thumb-articulo-carrusel">
+                          <span class="material-icons">favorite</span>
+                        </div>  
+                        <img src="images/Grupo 154.jpg" alt="">
+                      </a>
+                      <div class="info-articulo-carrusel">
+                        <h4 class="cat-articulo-carrusel">Categoria</h4>
+                        <a href="" class="nombre-articulo-carrusel"><h3>Nombre del producto</h3></a>
+                        <span class="precio-articulo-carrusel">$500.000</span>
+                        
+                        <div class="wrap-evaluacion-articulo-carrusel">
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons full-star">star</span>
+                          <span class="material-icons half-star">star_half</span>
+                          <span class="material-icons no-star">star_outline</span>
+                        </div>
+
+                        <a href="" class="boton back5">COMPRAR</a>
+
+                      </div>
+                    </div>
+                    <!-- Fin del Producto --------- -->
+
+                </div>
+                <!-- Fin carrusel fiestas -->
+              </div>
+              <!-- fin tabs de productos FIESTAS-->
+              <!-- **** -->
+            </div>
+            <!-- Fin contenedor de tabs de productos -->
+            
+
+          </div>
+        </section>
+        <!-- Finaliza Nuevos productos por categoría -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+
+
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- OFERTAS DE LA SEMANA -->
+        <section id="wrap-ofertas-semana">
+          <div id="ofertas-semana">
+            <!-- Contenedor imagen -->
+            <div id="imagen-ofertas-semana">
+              <div class="rounded-circle text-white py-2 position-absolute descuento"><span class="text-wrap">20% Descuento</span></div>
+              <img src="images/oferta_semana.jpg" alt="">
+            </div>
+            <!-- Fin Contenedor imagen -->
+            <!-- Descripcion oferta -->
+            <div id="informacion-ofertas-semana">
+              <h1>Oferta de la semana</h1>
+              <h3>Ukelele para niños</h3>
+              <p class="d-inline-block precio-oferta"><span class="pe-2 fw-normal text-decoration-line-through">$350.000</span><span class="ps-2 fw-bold color1">$180.000</span></p>
+              <p class="d-inline-block">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
+              <p class="color1">OFERTA VÁLIDA HASTA</p>
+              <p class="conteo-ofertas-semana">06 :  04 :  45 :  23</p>
+              <button class="btn text-white">COMPRAR AHORA</button>
+            </div>
+            <!-- Fin Descripcion oferta -->
+
+          </div>
+        </section>
+
+        <!-- Finaliza Ofertas de la semana -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- PRODUCTOS EN TENDENCIA -->
+        <section id="wrap-productos-tendencia">
+          <h2 class="titulo-seccion">Productos en Tendencia</h2>
+          <h4 class="bajada-titulo-seccion">Estos son los artículos que más gustan ¡Comprálos ya antes de que se agoten!</h4>
+
+          <div id="productos-tendencia">
+
+            <img src="images/arrow-left.svg" class="flecha-left-slider" id="flecha-left-carrusel-tendencia">
+            <img src="images/arrow-right.svg" class="flecha-right-slider" id="flecha-right-carrusel-tendencia">
+
+            <div id="carrusel-productos-tendencia">
+
+                <!-- Producto -->
+                <div class="wrap-articulo-carrusel">
+                  <a href class="thumb-articulo-carrusel"> 
+                    <img src="images/Grupo 264.png" alt="">
+                  </a>
+                  <div class="info-articulo-carrusel">
+                    <h4 class="cat-articulo-carrusel">Categoria</h4>
+                    <a href="" class="nombre-articulo-carrusel"><h3>Nombre del producto</h3></a>
+                    <span class="precio-articulo-carrusel">$500.000</span>
+                    
+                    <div class="wrap-evaluacion-articulo-carrusel">
+                      <span class="material-icons full-star">star</span>
+                      <span class="material-icons full-star">star</span>
+                      <span class="material-icons full-star">star</span>
+                      <span class="material-icons full-star">star</span>
+                      <span class="material-icons half-star">star_half</span>
+                      <span class="material-icons no-star">star_outline</span>
+                    </div>
+
+                    <a href="" class="boton back5">COMPRAR</a>
+
+                  </div>
+                </div>
+                <!-- Fin del Producto --------- -->
+
+            </div>
+            <!-- fin del carrusel -->
+
+          </div>
+          <!-- Fin del contenedor gernal del carrusel -->
+        </section>
+
+        <!-- Finaliza Productos en tendencia -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+
+
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- INSPIRACIÓN -->
+        <section id="wrap-inspiracion-instagram">
+          <h2 class="titulo-seccion">¡Aquí encuentras inspiración!</h2>
+          <h4 class="enlace-titulo-seccion">Instagram: <a href="">@cucoshop.co</a></h4>
+
+          <div id="inspiracion-instagram">
+
+            <!-- Imagen insta-->
+            <a href="" class="thumb-inspiracion-instagram">
+              <img src="images/logotipo-de-instagram.svg" alt="logo instagram" class="ico-thumb-inspiracion-instagram">
+              <div class="over-thumb-inspiracion-instagram"></div>
+              <img src="images/Grupo 226.jpg" alt="">
+            </a>
+            <!-- fin imagen instagram -->
+
+            <!-- Imagen insta-->
+            <a href="" class="thumb-inspiracion-instagram">
+              <img src="images/logotipo-de-instagram.svg" alt="logo instagram" class="ico-thumb-inspiracion-instagram">
+              <div class="over-thumb-inspiracion-instagram"></div>
+              <img src="images/Grupo 226.jpg" alt="">
+            </a>
+            <!-- fin imagen instagram -->
+
+            <!-- Imagen insta-->
+            <a href="" class="thumb-inspiracion-instagram">
+              <img src="images/logotipo-de-instagram.svg" alt="logo instagram" class="ico-thumb-inspiracion-instagram">
+              <div class="over-thumb-inspiracion-instagram"></div>
+              <img src="images/Grupo 226.jpg" alt="">
+            </a>
+            <!-- fin imagen instagram -->
+
+            <!-- Imagen insta-->
+            <a href="" class="thumb-inspiracion-instagram">
+              <img src="images/logotipo-de-instagram.svg" alt="logo instagram" class="ico-thumb-inspiracion-instagram">
+              <div class="over-thumb-inspiracion-instagram"></div>
+              <img src="images/Grupo 226.jpg" alt="">
+            </a>
+            <!-- fin imagen instagram -->
+
+            <!-- Imagen insta-->
+            <a href="" class="thumb-inspiracion-instagram">
+              <img src="images/logotipo-de-instagram.svg" alt="logo instagram" class="ico-thumb-inspiracion-instagram">
+              <div class="over-thumb-inspiracion-instagram"></div>
+              <img src="images/Grupo 226.jpg" alt="">
+            </a>
+            <!-- fin imagen instagram -->
+
+            <!-- Imagen insta-->
+            <a href="" class="thumb-inspiracion-instagram">
+              <img src="images/logotipo-de-instagram.svg" alt="logo instagram" class="ico-thumb-inspiracion-instagram">
+              <div class="over-thumb-inspiracion-instagram"></div>
+              <img src="images/Grupo 226.jpg" alt="">
+            </a>
+            <!-- fin imagen instagram -->
+
+          </div>
+        </section>
+
+
+        <!-- Finaliza inspiración -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+
+
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- NEWS LETTER -->
+        <section id="wrap-inscricion-news">
+          <h2 class="titulo-seccion-white">¡Noticias y ofertas exclusivas solo para ti!</h2>
+          <h3 class="bajada-titulo-seccion-white">Si perteneces a esta comunidad obtendrás beneficios exclusivos, como ofertas y promociones.<br>Prometemos enviarte información únicamente valiosa para ti y tu pequeño.</h3>
+
+          <form name="inscricion-news" id="inscricion-news" method="POST" onsubmit="">
+            <input type="email" name="input-news" id="input-news" value="Tu email" class="" required>
+            <button type="submit" role="button" class=""  id="button-news">SUSCRIBIRTE</button>
+          </form>
+        </section>
+        <!-- Finaliza inscripción a newsletter -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- FOOTER -->
+        <footer id="footer-page">
+          <div id="wrap-info-footer">
+
+            <!-- Servicio al Cliente-->
+            <div class="columna-info-footer">
+              <h2>SERVICIO AL CLIENTE</h2>
+              <a href="">Envíos y devoluciones</a>
+              <a href="">Garantías</a>
+              <a href="">Preguntas Frecuentes</a>
+              <a href="">Políticas de privacidad</a>
+              <a href="">Términos y condiciones</a>
+              <a href="">Contáctanos</a>
+              <p>Medios de pagos admitidos</p>
+              <div class="pagos-footer">
+                <img src="images/pagos1_03.png" alt="">
+                <img src="images/pagos1_05.png" alt="">
+                <img src="images/pagos1_07.png" alt="">
+                <img src="images/pagos1_09.png" alt="">
+                <img src="images/pagos1_11.png" alt="">
+                <img src="images/pagos2_03.png" alt="">
+                <img src="images/pagos2_05.png" alt="">
+                <img src="images/pagos2_07.png" alt="">
+              </div>
+            </div>
+            <!-- Fin Servicio al Cliente-->
+
+            <!-- Contáctanos-->
+            <div class="columna-info-footer">
+              <h2>CONTÁCTANOS</h2>
+              <p>Oficinas administrativas <br>
+                Bogotá, Colombia <br>
+                +57320123435<br>+57320123435</p>
+                <a href="mailto:servicioalcliente@cucushop.co">servicioalcliente@cucushop.co</a>
+
+                <div id="wrap-rrss-footer" class="d-flex flex-row align-items-center justify-content-center">
+                  <a href="" class="rrss-footer">
+                    <img src="images/simbolo-de-la-aplicacion-de-facebook.svg" alt="logo facebook">
+                  </a>
+                  <a href="" class="rrss-footer">
+                    <img src="images/logotipo-de-instagram.svg" alt="logo instagram">
+                  </a>
+                </div>
+            </div>
+            <!-- Fin Contáctanos -->
+
+            <!-- CUCU Shop -->
+            <div class="columna-info-footer">
+              <h2>CUCU SHOP MARKET PLACE</h2>
+              <a href="">Acerca de nosotros</a>
+              <a href="">Marcas aliadas</a>
+              <a href="">Cómo vender con nosotros</a>
+              <a href="">Cómo comprar con nosotros</a>
+              <a href="">Prensa</a>
+              <a href="">Compromiso ambiental y social</a>
+              <a href="">Guía de tallas</a>
+
+              <br><br><br>
+
+              <p>© 2021 Cucu Shop Marketplace</p>
+            </div>
+            <!-- Fin CUCU Shop -->
+
+          </div>
+        </footer>
+        <!-- Finaliza Footer -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+        
+          
+
+    </main>
+
+  </body>
+
+</html>

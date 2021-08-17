@@ -1,0 +1,1938 @@
+/*
+Theme Name: 
+Theme URI: 
+Author: 
+mail: 
+Version:
+*/
+
+@charset "utf-8";
+/* CSS Document */
+
+
+/* ------------------------------------------------- 
+
+0. ESTILOS BASE
+1. TEXTO y TIPOGRAFÍAS
+2. HEADER
+3. NAVERGADOR
+4. BASE MODAL
+5. HERO INDEX
+6. COMPRA POR EDADES
+7. CATEGORÍAS DESTACADAS
+8. PRODUCTOS POR CATEGORÍAS
+9. COMPRA POR EDADES
+10. OFERTAS SEMANA
+11. PRODUCTOS TENDENCIA
+12. INSPIRACIÓN
+13. INSCRIPCIÓN NEWSLETTER
+14. FOOTER
+
+
+
+
+------------------------------------------------- */
+
+/* 0. ESTILOS BASE */
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+    box-sizing: border-box !important;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+:root {
+    --color1:#DF7B39;
+    --color2:#1D7B83;
+    --color3:#FFF2DD;
+    --color4:#DBA552;
+    --color5:#BC7981;
+    --color6:#ffd497;
+    --color7:#00999b;
+}
+
+body, html{
+    width: 100%;
+	margin: 0;
+	padding: 0;
+	overflow-x:hidden;
+    color:var(--color2);  
+    font-size: 14px; 
+}
+
+.color1{
+	color: var(--color1) !important;
+}
+
+.color2{
+	color: var(--color2) !important;
+}
+
+.color3{
+	color: var(--color3) !important;
+}
+
+.color4{
+	color: var(--color4) !important;
+}
+
+.color5{
+	color: var(--color5) !important;
+}
+
+.color6{
+	color: var(--color6) !important;
+}
+
+.color7{
+	color: var(--color7) !important;
+}
+
+
+.back1{
+	background-color: var(--color1) !important;
+}
+
+.back2{
+	background-color: var(--color2) !important;
+}
+
+.back3{
+	background-color: var(--color3) !important;
+}
+
+.back4{
+	background-color: var(--color4) !important;
+}
+
+.back5{
+	background-color: var(--color5) !important;
+}
+
+.back6{
+	background-color: var(--color6) !important;
+}
+
+
+.back7{
+	background-color: var(--color7) !important;
+}
+
+
+
+section,nav,article,aside,hgroup,header,footer{
+	display:block
+}
+ul, ol, li{
+	list-style: none;
+} 
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset, img {
+	border:0;
+}
+img{
+	width: 100%;
+	height: auto;
+	display: block;
+}
+.cleaner{
+	clear: both;
+	visibility:hidden;
+	font-size:0;
+	height:0;
+	display:block;
+}
+.hidden{
+    position: absolute;
+    width: 0;
+    height: 0;
+    top:-5000px;
+    left: -5000px;
+}
+.textLeft{
+	text-align:left !important;
+}
+.textRight{
+	text-align:right  !important;
+}
+.textCenter{
+	text-align:center;
+}
+.filter{
+	position: absolute;
+	background-image: linear-gradient(to right,rgba(0,0,0,0.3) ,rgba(0,0,0,0.6));
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+.padding20{
+	padding: 0 20px !important;
+}
+.padding30{
+	padding: 0 30px !important;
+}
+
+a, button{
+    border:none;
+    background: none;
+    cursor:pointer;
+}
+
+.btn{
+    display:inline-flex !important;
+    flex-flow: row nowrap!important;
+    align-items: center!important;
+    justify-content: space-between!important;
+    font-size: 1.4em !important;
+    font-weight: 400 !important;
+    background: var(--color1) !important;
+    border:1px solid var(--color1) !important;
+}
+.btn > img{
+    width: 32px;
+    margin: 0 8px 0 0;
+}
+.btn:hover{
+    background-color:var(--color2) !important;
+    border:1px solid var(--color2) !important;
+}
+
+.boton{
+    display: inline-block;
+    padding: 5px 45px;
+    color:white;
+    cursor: pointer;
+    font-size: 1.3em;
+    text-decoration: none;
+    transition: all linear 0.3s;
+}
+
+.boton:hover{
+    color:white;
+    background-color: black !important;
+}
+
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+
+/* 1. TEXTO y TIPOGRAFÍAS */
+
+
+p{
+    color: var(--color1);
+    font-size: 1em;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: 'Bodoni Moda', serif;
+}
+
+.titulo-seccion{
+    width: 90%;
+    color: var(--color2);
+    font-size: 3em;
+    font-weight: 600;
+    text-align: center;
+    margin: 30px auto;
+}
+.bajada-titulo-seccion{
+    width: 90%;
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--color2);
+    font-size: 1.1em;
+    text-align: center;
+    margin: 30px auto;
+}
+.titulo-seccion-white{
+    width: 90%;
+    color: white;
+    font-size: 3em;
+    font-weight: 600;
+    text-align: center;
+    margin: 30px auto;
+}
+.bajada-titulo-seccion-white{
+    width: 90%;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-size: 1.1em;
+    text-align: center;
+    margin: 30px auto;
+}
+.enlace-titulo-seccion{
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--color1);
+    font-size: 1.3em;
+    text-align: center;
+    margin: 30px auto;
+}
+.enlace-titulo-seccion a{
+    color: var(--color1);
+}
+.enlace-titulo-seccion a:hover{
+    color: var(--color2);
+}
+
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+
+/* 2. HEADER - NAV */
+/* contenedor global header */
+#header-page{
+    padding: 0 !important;
+    position: relative;
+    z-index: 1002;
+}
+
+/* Top header */
+
+#wrap-header-top{
+    background-color: var(--color1) !important;
+    padding: 15px 0 5px 0;
+}
+
+#carousel-header-top{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    text-align: center !important;
+}
+
+.slider-header-top *{
+    color:white;
+    font-size: 1.2em;
+    width: 80%;
+    margin: 10px auto;
+    padding: 0 10px;
+}
+
+.carousel-control-next{
+    opacity: 1 !important;
+    width: 45px !important;
+    background-color: none !important;
+    background: none !important;
+    border:none;
+}
+
+.carousel-control-prev{
+    opacity: 1 !important;
+    width: 45px !important;
+    background-color: none !important;
+    background: none !important;
+    border:none;
+}
+
+/* área de header */
+.icono-header{
+    width: 25px;
+}
+
+#wrap-header{
+    background-color: var(--color3);
+    padding: 30px 15px;
+}
+
+/* costo y buscador */
+#wrap-moneda-buscador-header{
+    flex: 1;
+}
+#wrap-moneda-header{
+    color:var(--color2);
+    font-size: 1.3em;
+    font-weight: 600;
+    margin: 0 70px 0 0;
+}
+#wrap-moneda-header *{
+    
+}
+#wrap-buscador-header{
+
+}
+#field-search-header{
+    border:none;
+    background: none;
+    border-bottom:1px solid var(--color2);
+    height: 34px;
+    width: 100%;
+    min-width: 200px;
+    color:var(--color2);
+    font-size: 1.1em;
+    font-weight: 600;
+    margin: 0 10px;
+}
+
+/* logo */
+#logo-top-header{
+    flex: 1;
+    width: 75px;
+    height: 100px;
+    background:url(images/logo-cucu.svg) center 0  no-repeat;
+    background-size: contain;
+    text-indent: -5000px;
+    margin: auto;
+}
+
+/* menu auxiliar y carrito */
+#wrap-menu-carrito-header{
+    flex: 1;
+}
+
+.enlace-header{
+    margin: 0 10px;
+    padding: 6px 10px;
+    border-radius: 4px;
+    color:var(--color2);
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all linear 0.3s;
+}
+
+.enlace-header img{
+    margin: 0 10px 0 0;
+}
+
+.enlace-header:hover{
+    background-color: var(--color1);
+    color: white;
+}
+
+.carrito-header span{
+    font-size: 1.4em;
+}
+
+
+/* Menú cuenta */
+
+#check-cuenta:checked + #menu-cuenta{
+    position: absolute !important;
+    z-index: 1000 !important;
+    top:210px !important;
+    right: 50px !important;
+}
+
+#puntero-cuenta-box{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 70px;
+    top:-15px;
+    z-index: 1004;
+    background-color: white;
+    clip-path: polygon(50% 24%, 0% 100%, 100% 100%);
+}
+
+#close-cuenta-movil{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: -5000px;
+    top:20px;
+    z-index: 1004;
+}
+
+#menu-cuenta{
+    position: absolute;
+    /*top:250px;
+    right: 50px;*/
+    z-index: 1004;
+    top:-5000px;
+    right: -5000px;
+    width: 70%;
+    max-width: 350px;
+    background-color: white;
+    padding: 15px;
+}
+
+#menu-cuenta > ul{
+    margin: 0;
+    padding: 0;
+}
+
+.subtitulo-menu-cuenta{
+    text-transform: uppercase;
+    color: var(--color2);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.wrap-enlace-acordeon-menu-cuenta{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 7px;
+    margin: 10px 0;
+}
+.wrap-enlace-acordeon-menu-cuenta span{
+    color: var(--color1);
+}
+
+.wrap-enlace-acordeon-menu-cuenta:hover{
+    background-color: var(--color1);
+}
+
+.wrap-enlace-acordeon-menu-cuenta:hover span,.wrap-enlace-acordeon-menu-cuenta:hover .enlace-acordeon-menu-cuenta{
+    color: white;
+}
+
+.enlace-acordeon-menu-cuenta{
+    color: var(--color2);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+}
+
+.enlace-acordeon-menu-cuenta:hover{
+    color: white;
+    background-color: var(--color1);
+}
+
+.enlace-cerrar-menu-cuenta{
+    color: var(--color1);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+    margin: 10px 0;
+    padding: 3px 7px;
+}
+.enlace-cerrar-menu-cuenta:hover{
+    color: white;
+    background-color: var(--color2);
+}
+
+.subenlace-acordeon-menu-cuenta{
+    color: var(--color2);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 0.9em;
+    font-weight: 600;
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+    margin: 10px 0;
+    padding: 3px 7px;
+    border-bottom: 1px solid rgba(255,255,255,0);
+}
+.subenlace-acordeon-menu-cuenta:hover{
+    color: var(--color1);
+    border-bottom: 1px solid var(--color1);
+}
+
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* 3. NAVERGADOR */
+#wrap-navegador-principal{
+    width: 100%;
+    background-color:white;
+    position: relative;
+    z-index: 1001;
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+#navegador-principal{
+    width: 100%;
+    max-width: 1100px;
+    margin: 0;
+    background-color:white;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline-start: 0;
+}
+.boton-menu-principal{
+    display: block;
+    padding: 31px 20px;
+    color: var(--color2);
+    font-size: 1.3em;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all linear 0.3s;
+}
+.boton-menu-principal:hover{
+    color:white;
+    background-color: var(--color2);
+}
+
+#boton-categorias{
+    display: block;
+    padding: 14px 20px;
+    background-color: var(--color2);
+    text-decoration: none;
+    cursor: pointer;
+    transition: all linear 0.3s;
+}
+#boton-categorias span{
+    color: white;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+#boton-categorias:hover{
+    background-color: var(--color1);
+}
+
+.navbar-toggler{
+    display: block !important;
+}
+
+
+
+
+
+/* menu de categorías */
+#wrap-ico-btVerCategorias{ 
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    position: relative;
+    margin-right: 5px;
+}
+#open-ico{
+    position: absolute;
+}
+#close-ico{
+    position: absolute;
+    top:40px;
+}
+.navbar-toggler:active,.navbar-toggler:visited,.navbar-toggler:focus {
+    border:none !important;
+    box-shadow: none !important;
+}
+
+/* contendor menu categorías */
+#wrap-categorias-nav{
+    position: absolute;
+    width: 100%;
+    max-width: 1100px;
+    background-color: white;
+    padding: 10px;
+    z-index: 1005;
+    top: -5000px;
+    left: -5000px;
+}
+
+#categorias-nav-content{
+    background-color: var(--color3);
+    padding: 10px 0;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+}
+#lista-categorias-nav-content{
+    flex: 1;
+    width: 100%;
+    max-width: 360px;
+}
+#subcategorias-nav-content{
+    flex: 3;
+    padding: 20px;
+    display: flex !important;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+.wrap-subcategorias-nav{
+    display: none;
+    width: 100%;
+}
+
+.subcategoria-nav{
+    width: 25%;
+    padding: 10px;
+    display: flex;
+    flex-flow: column;
+}
+
+.subtitulo-subcategoria-nav{
+    text-transform: uppercase;
+    color: var(--color2);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    border-bottom: 1px solid var(--color2);
+}
+
+.enlace-subcategoria-nav{
+    color: var(--color2);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    text-decoration: none;
+    display: block;
+    line-height: 2em;
+}
+.enlace-subcategoria-nav:hover{
+    color: var(--color1);
+}
+
+.enlace-verTodo-subcategoria-nav{
+    color: var(--color1);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    text-decoration: none;
+    display: block;
+    line-height: 2em;
+}
+.enlace-verTodo-subcategoria-nav:hover{
+    color: var(--color1);
+    border-bottom: 1px solid var(--color1);
+}
+
+
+/* boton categoría principal */
+
+.boton-item-principal-categoria{
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: var(--color2);
+    font-weight: 600;
+    font-size: 1em;
+    padding: 8px 8px 8px 20px;
+    margin: 2px 0;
+
+    border-bottom: 1px solid var(--color2);
+
+    transition: all linear 0.3s;
+}
+
+.boton-item-principal-categoria > .material-icons{
+    color: var(--color1);
+    font-size: 1em;
+}
+
+.boton-item-principal-categoria:hover{
+    background-color: var(--color1);
+    color: white;
+    border-bottom: 1px solid var(--color1);
+}
+
+.boton-item-principal-categoria:hover > .material-icons{
+    color: white;
+}
+.back-categoria-movil{
+    color: white !important;
+    background-color: var(--color1);
+}
+.back-categoria-movil *{
+    color: white !important;
+}
+#close-categorias-movil{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: -5000px;
+    top:20px;
+    z-index: 1002;
+}
+
+#check-categorias:checked + #wrap-categorias-nav{
+    top:63px !important;
+    left: 50% !important;
+    transform: translateX(-50%);
+}
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* 4. BASE MODAL */
+#lightBox-Back{
+    width: 100%;
+    background-color: rgba(0,0,0,0.8);
+    position: fixed;    
+}
+
+.show-lightBox-Back{
+    z-index: 1000;
+    height: 100vh;
+}
+
+.show-lightBox-Back-2{
+    z-index: 1002;
+    height: 100vh;
+}
+
+.fixed-body{
+    overflow-y:hidden !important;
+}
+
+
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* 5. HERO INDEX */
+#wrap-slider-index{
+    width: 100%;
+    max-width: 90vw !important;
+    margin: auto;
+}
+
+.slideOpacity{
+    width: 100%;
+    background: rgba(0,0,0,0.4);
+}
+.manchitasHero{
+    position: absolute;
+    left: 0;
+    top: 350px;
+    width: 100%;
+    z-index: 1001;
+}
+.item-slider-index{
+    position: relative;
+}
+.carousel-caption-hero{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    color: #fff;
+    text-align: center;
+}
+.captionPosition{
+    width: 50%;
+    text-align: start;
+    padding-top: 15%;
+    padding-left: 15%;
+}
+.captionPosition h1{
+    font-size: 4.06rem;
+    font-family: "Josefin Sans";
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.captionPosition p, .CTA{
+    font-size: 1.25rem;
+    font-family: "Josefin Sans";
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 0.3em
+}
+.CTA{
+    background-color: var(--color1);
+    padding: 1rem 1rem;
+    text-align: center;
+    border: none;
+    position: relative;
+    z-index: 15;
+}
+.CTA:hover{
+    background-color:var(--color2);
+}
+.buttonHeroPrev, .buttonHeroNext{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 50%;
+}
+.buttonHeroPrev{
+    padding: 0.5rem 0.7rem 0.5rem 0.2rem;
+}
+.buttonHeroNext{
+    padding: 0.5rem 0.2rem 0.5rem 0.7rem;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 15% !important;
+    z-index: 15 !important;
+}
+
+
+
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/*6. COMPRA POR EDADES*/
+
+
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* 7. CATEGORÍAS DESTACADAS */
+#wrap-categorias-destacadas{
+    padding: 50px 0;
+}
+
+#categorias-destacadas{
+    width: 100%;
+    max-width: 90vw;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+    margin: auto;
+}
+
+.area-destacada-cont img{
+    display: block;
+    height: 100%;
+}
+
+.area-destacada-1{
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    min-height: 100px;
+}
+
+.area-destacada-2{
+    position: relative;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    min-height: 100px;
+}
+
+.area-destacada-3{
+    position: relative;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    min-height: 100px;
+}
+
+.wrap-info-area-destacada{
+    position: absolute;
+    z-index: 2;
+    width: 90%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.wrap-info-area-destacada h3{
+    font-weight: 600;
+    font-size: 2.3em;
+    text-align: center;
+    color: white;
+}
+
+.wrap-info-area-destacada p{
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+}
+
+.over-thumb{
+    background-color: rgba(0,0,0,0.4);
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* 8. PRODUCTOS POR CATEGORÍAS*/
+#wrap-productos-categoria-index{
+    padding: 50px 0;
+    background-color: var(--color3);
+}
+#productos-categoria-index{
+    width: 100%;
+    max-width: 90vw;
+    margin: auto;
+    padding: 30px 0;
+}
+/* navegador de categorías */
+#nav-tab-categorias{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:space-between;
+    align-items: center;
+    border-bottom: 3px solid var(--color2);
+}
+
+.enlaceCategorias{
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    color: var(--color1);
+    padding: 7px 12px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.enlaceCategorias:hover{
+    color: var(--color2);
+    background-color: var(--color6);
+}
+
+.enlaceCategoriasActivo, .enlaceCategoriasActivo:focus, .enlaceCategoriasActivo:active{
+    color: var(--color2) !important;
+    background-color: var(--color6) !important;
+    border:none !important;
+    border-radius: 0 !important;
+    outline: none !important;
+}
+
+#nav-tabContent{
+    width: 100%;
+}
+
+.tab-categoria{
+    position: relative;
+    padding: 30px 10px;
+}
+
+.flecha-left-slider{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 4;
+    width: 35px;
+}
+
+.flecha-right-slider{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 4;
+    width: 35px;
+}
+
+.carrusel-articulos{
+    width: 90%;
+    margin: auto;
+}
+
+
+/* Producto */
+.wrap-articulo-carrusel{
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.thumb-articulo-carrusel{
+    text-decoration: none;
+    display: block;
+    position: relative;
+}
+
+.favorite-icon-thumb-articulo-carrusel{
+    position: absolute;
+    top:15px;
+    right: 15px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 7px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.favorite-icon-thumb-articulo-carrusel span{
+    color: var(--color5);
+    line-height: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.info-articulo-carrusel{
+    margin: 10px 0;
+}
+
+.cat-articulo-carrusel{
+    color: var(--color2);
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+.nombre-articulo-carrusel{
+    color: var(--color2);
+    font-size: 2em;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.nombre-articulo-carrusel:hover{
+    color:var(--color1);
+}
+
+.precio-articulo-carrusel{
+    display: inline-block;
+    color: var(--color2);
+    font-size: 2em;
+}
+
+.wrap-evaluacion-articulo-carrusel > span{
+    font-size: 1.2em;
+}
+
+.full-star, .half-star{
+    color: var(--color1);
+}
+
+.no-star{
+    color: var(--color4);
+}
+
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* 9. COMPRA POR EDADES */
+#wrap-compra-edades{
+    padding: 50px 0;
+    background-color: var(--color3);
+    margin: 30px 0;
+}
+#compra-edades{
+    width: 100%;
+    max-width: 90vw;
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content:center;
+}
+
+.imgContainer{
+    display: inline-block;
+    position: relative;
+    width: 80%; 
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.entrada-edades{
+    width: 90%;
+    max-width: 450px;
+    margin: 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+.entrada-edades h2{
+    font-weight: 700;
+    font-size: 50px;
+}
+.entrada-edades p{
+    font-size: 30px;
+    font-family: "Josefin Sans";
+    font-weight: 400;
+}
+
+.entrada-edades h2, p{
+    color: #1D7B83;
+}
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* 10. OFERTAS SEMANA */
+#wrap-ofertas-semana{
+    padding: 50px 0;
+    margin: 30px 0;
+}
+#ofertas-semana{
+    width: 100%;
+    max-width: 90vw;
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#imagen-ofertas-semana{
+    position: relative;
+}
+
+.descuento {
+    position: absolute;
+    background-color:#1D7B83;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+    width: 8rem;
+    top: 5.4%;
+    left: 5.4%;
+}
+.descuento span {
+    font-size: 1rem;
+}
+
+#informacion-ofertas-semana{
+    margin: 0 20px;
+    color: var(--color2);
+    text-align: center;
+}
+
+.precio-oferta{
+    font-size: 2em;
+}
+
+.conteo-ofertas-semana{
+    font-size: 2em;
+    font-weight: 600;
+}
+
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+
+/* 11. PRODUCTOS TENDENCIA */
+#wrap-productos-tendencia{
+    padding: 50px 0;
+    background-color: var(--color3);
+    margin: 30px 0;
+}
+
+#productos-tendencia{
+    width: 100%;
+    max-width: 90vw;
+    margin: auto;
+    padding: 30px 0;
+}
+
+
+
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* 12. INSPIRACIÓN */
+#wrap-inspiracion-instagram{
+    padding: 50px 0;
+    margin: 30px 0;
+}
+
+#inspiracion-instagram{
+    width: 100%;
+    max-width: 90vw;
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.thumb-inspiracion-instagram{
+    display: inline-block;
+    position: relative;
+    width: 33.3%;
+    transition: all linear 0.2s;
+}
+.over-thumb-inspiracion-instagram{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0,0,0,0.4);
+    transition: all linear 0.2s;
+}
+.ico-thumb-inspiracion-instagram{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    z-index: 3;
+    top:60%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: all linear 0.2s;
+}
+
+.thumb-inspiracion-instagram:hover .over-thumb-inspiracion-instagram{
+    height: 100%;
+}
+.thumb-inspiracion-instagram:hover .ico-thumb-inspiracion-instagram{
+    opacity: 1;
+    top:50%;
+}
+
+
+
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* 13. INSCRIPCIÓN NEWSLETTER */
+#wrap-inscricion-news{
+    padding: 50px 0;
+    margin: 30px 0 0 0;
+    background-color: var(--color7);
+}
+
+#inscricion-news{
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+#input-news{
+    flex:4;
+    width: 100%;
+    height: 40px;
+    color: white;
+    font-size: 1.4em;
+    background: none;
+    border:1px solid white;
+    padding-left: 15px;
+}
+
+#button-news{
+    flex:1;
+    width: 100%;
+    height: 40px;
+    color: var(--color7);
+    background-color: white;
+    text-align: center;
+}
+
+#button-news:hover{
+    background-color: var(--color1);
+    color: white;
+}
+
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* 14. FOOTER */
+#footer-page{
+    padding: 50px 0;
+    background-color: var(--color2);
+}
+
+#wrap-info-footer{
+    width: 100%;
+    max-width: 90vw;
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.columna-info-footer{
+    flex:1;
+    width: 33%;
+    padding: 0 20px;
+    text-align: center;
+    color: white;
+}
+.columna-info-footer:nth-child(2){
+    border-left:1px solid white;
+    border-right:1px solid white;
+}
+
+.columna-info-footer h2{
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.columna-info-footer a, .columna-info-footer p{
+    display: block;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-size: 1.1em;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.columna-info-footer a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+#wrap-rrss-footer{
+    margin: 20px 0;
+}
+.rrss-footer{
+    width: 35px;
+    padding: 3px;
+    margin: 10px;
+}
+.pagos-footer{
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+.pagos-footer img{
+    display: block;
+    width: auto !important;
+    margin:4px 3px;
+}
+
+
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ---------------------- R E S P O N S I V E--------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+
+@media only screen and (max-width: 1050px) {
+    /* ------------------------------------------------- */
+    /* ------------------------------------------------- */
+    /* 3. NAVERGADOR */
+    .boton-menu-principal{
+        font-size: 1.2em;
+    }
+
+    #boton-categorias > span{
+        font-size: 1.1em;
+    }
+
+    .navbar-toggler img{
+        width: 27px;
+        margin: 0 10px 0 0;
+    }
+    /* ------------------------------------------------- */
+    /* ------------------------------------------------- */
+    /* 7. CATEGORÍAS DESTACADAS */
+    .wrap-info-area-destacada p{
+        font-size: 1.1em;
+    }
+
+    /* ------------------------------------------------- */
+    /* ------------------------------------------------- */
+    /* 8. PRODUCTOS POR CATEGORÍAS*/
+    /* navegador de categorías */
+
+    .enlaceCategorias{
+        font-size: 1.1em;
+        padding: 7px 10px;
+    }
+
+    /* ------------------------------------------------- */
+    /* ------------------------------------------------- */
+    /* 10. OFERTAS SEMANA */
+
+    .descuento {
+        height: 7.5rem;
+        width: 7.5rem;
+        top: 1%;
+        left: 1%;
+    }
+    .descuento span {
+        font-size: 1rem;
+    }
+
+    
+
+
+}
+
+@media only screen and (max-width: 980px) {
+    
+    /* ------------------------------------------------- */
+    /* ------------------------------------------------- */
+    /* ------------------------------------------------- */
+
+    /* 2. HEADER - NAV */
+
+    /* área de header */
+    #wrap-header{
+        padding: 30px 10px;
+    }
+
+    /* costo y buscador */
+    #cuenta-pais, #cuenta-saparador, #cuenta-valor, #field-search-header{
+        display: none;
+    }
+    #cuenta-moneda{
+        font-size: 1.5em;
+    }
+
+
+    /* menu auxiliar y carrito */
+    .enlace-header{
+        margin: 0 10px;
+        padding: 6px 6px;
+    }
+    .enlace-header > span{
+        display: none;
+    }
+    /* ------------------------------------------------- */
+    /* ------------------------------------------------- */
+    /* 10. OFERTAS SEMANA */
+
+    .descuento {
+        height: 6.5rem;
+        width: 6.5rem;
+        top: 1%;
+        left: 1%;
+    }
+    .descuento span {
+        font-size: 0.8rem;
+    }
+
+    /* ------------------------------------------------- */
+    /* ------------------------------------------------- */
+    /* 10. OFERTAS SEMANA */
+
+    #ofertas-semana{
+        flex-flow: column;
+    }
+    .descuento {
+        top: 2%;
+        left: 2%;
+    }
+    #informacion-ofertas-semana{
+        margin: 20px 0;
+    }
+}
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+
+
+@media only screen and (max-width: 950px) {
+        
+    /* ------------------------------------------------- */
+    /* ------------------------------------------------- */
+    /* 5. HERO INDEX */
+    /* . CAPTION-POSITION */
+
+    .captionPosition{
+        width: 80%;
+        padding-top: 10%;
+    }
+    .captionPosition h1{
+        font-size: 3.5rem;
+    }
+    .captionPosition p, .CTA{
+        font-size: 0.9rem;
+    }
+    /* ------------------------------------------------- */
+    /* ------------------------------------------------- */
+    /* 9. COMPRA POR EDADES */
+    .entrada-edades h2{
+        font-size: 40px;
+    }
+    .entrada-edades p{
+        font-size: 20px;
+    }
+
+    /* ------------------------------------------------- */
+    /* ------------------------------------------------- */
+    /* 14. FOOTER */
+
+
+    #wrap-info-footer{
+        display: flex;
+        flex-flow: column;
+    }
+
+    .columna-info-footer{
+        width: 100%;
+        padding:30px 0;
+    }
+
+    .columna-info-footer:nth-child(1){
+        order: 2;
+        border-left:none;
+        border-right:none;
+        border-top:1px solid white;
+        border-bottom:1px solid white;
+    }
+    .columna-info-footer:nth-child(2){
+        order: 1;
+        border-left:none;
+        border-right:none;
+    }
+    .columna-info-footer:nth-child(3){
+        order: 3;
+        border-left:none;
+        border-right:none;
+    }
+    
+
+}
+
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+
+@media only screen and (max-width: 880px) {
+     /* ------------------------------------------------- */
+    /* ------------------------------------------------- */
+    /* 3. NAVERGADOR */
+    .bt-ofertas > span{
+        display: none;
+    }
+
+    .bt-cucu-world{
+        display: none;
+    }
+}
+
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+
+@media only screen and (max-width: 840px) {
+   /* ------------------------------------------------- */
+    /* ------------------------------------------------- */
+    /* 8. PRODUCTOS POR CATEGORÍAS*/
+
+    /* navegador de categorías */
+    #nav-tab-categorias{
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content:center;
+        align-items: center;
+        border-bottom: 3px solid var(--color2);
+    }
+    /* ------------------------------------------------- */
+    /* ------------------------------------------------- */
+    /* 12. INSPIRACIÓN */
+    #inspiracion-instagram{
+        flex-flow: row wrap;
+    }
+
+}
+
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+
+@media only screen and (max-width: 750px) {
+    /* ------------------------------------------------- */
+    /* ------------------------------------------------- */
+    /* ------------------------------------------------- */
+    /* 5. HERO INDEX */
+    #wrap-slider-index{
+        max-width: 100vw !important;
+    }
+
+   /* ------------------------------------------------- */
+    /* ------------------------------------------------- */
+    /* 7. CATEGORÍAS DESTACADAS */
+    #categorias-destacadas{
+        display: flex;
+        flex-flow: column;
+    }
+    /* ------------------------------------------------- */
+    /* ------------------------------------------------- */
+    /* 9. COMPRA POR EDADES */
+    #compra-edades{
+        flex-flow: column;
+    }
+
+    
+
+   
+}
+
+
+@media only screen and (max-width: 700px) {
+    
+    /* ------------------------------------------------- */
+    /* ------------------------------------------------- */
+    /* ------------------------------------------------- */
+
+    /* 2. HEADER - NAV */
+
+    /* Top header */
+    .slider-header-top *{
+        font-size: 1em;
+        width: 80%;
+    }
+
+    /* ------------------------------------------------- */
+    /* ------------------------------------------------- */
+    /* 3. NAVERGADOR */
+    .boton-menu-principal{
+        font-size: 1em;
+    }
+    .boton-categorias-principal{
+    }
+    #boton-categorias > span{
+        font-size: 1em;
+    }
+
+    .subcategoria-nav{
+        width: 33%;
+        padding: 10px;
+        display: flex;
+        flex-flow: column;
+    }
+    /* ------------------------------------------------- */
+    /* ------------------------------------------------- */
+    /* 5. HERO INDEX */
+    .captionPosition h1{
+        font-size: 2rem;
+    }
+    .captionPosition p, .CTA{
+        font-size: 0.7rem;
+    }
+    
+}
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+
+@media only screen and (max-width: 650px) {
+
+    /* 2. HEADER - NAV */
+    /* contenedor global header */
+    #header-page{
+        position: static;
+    }
+
+    /* cuenta */
+    #close-cuenta-movil{
+        right: 105%;
+    }
+    #menu-cuenta{
+        position: absolute;
+        width: 80%;
+        max-width: 100%;
+        background-color:var(--color3);
+        padding: 15px;
+    }
+    #check-cuenta:checked + #menu-cuenta{
+        position: fixed !important;
+        z-index: 1004 !important;
+        top:0 !important;
+        right: 0 !important;
+    }
+
+   
+    
+    /* ------------------------------------------------- */
+    /* ------------------------------------------------- */
+    /* 3. NAVERGADOR */
+    #wrap-navegador-principal{
+        position: static;
+    }
+    .boton-menu-principal{
+        padding: 10px;
+    }
+    .navbar-toggler img{
+        margin: 0;
+    }
+    #boton-categorias{
+        display: block;
+        padding: 14px 20px;
+        background-color: var(--color2);
+        text-decoration: none;
+        cursor: pointer;
+        transition: all linear 0.3s;
+    }
+    #boton-categorias > span{
+        display: none;
+    }
+
+    #boton-categorias{
+        padding: 10px 15px;
+    }
+
+    /* menu de categorías */
+    #wrap-ico-btVerCategorias{ 
+        width: 30px;
+        height: 30px;
+        overflow: hidden;
+        position: relative;
+        margin-right: 0
+    }
+
+    /* contendor menu categorías */
+    #wrap-categorias-nav{
+        width: 80%;
+        background-color: var(--color3);
+    }
+
+    
+    #categorias-nav-content{
+        flex-flow: column;
+    }
+
+
+    #lista-categorias-nav-content{
+        max-width: 100%;
+        padding-inline-start: 0;
+    }
+    
+    .subcategoria-nav{
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        flex-flow: column;
+        background-color: var(--color1);
+        color: white !important;
+    }
+
+    /* boton categoría principal */
+    .boton-item-principal-categoria{
+        max-width: 100%;
+    }
+
+    #close-categorias-movil{
+        left: 105%;
+    }
+
+    #check-categorias:checked + #wrap-categorias-nav{
+        top:0 !important;
+        left: 0 !important;
+        transform: translateX(0);
+    }
+    
+}
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+
+@media only screen and (max-width: 500px) {
+    
+    /* ------------------------------------------------- */
+    /* ------------------------------------------------- */
+    /* ------------------------------------------------- */
+
+    /* 2. HEADER - NAV */
+    /* Top header */
+    .slider-header-top *{
+        font-size: 0.9em;
+    }
+    /* menu auxiliar y carrito */
+    .enlace-header{
+        margin: 0 5px;
+    }
+
+    #wrap-moneda-header{
+        margin: 0 30px 0 0;
+    }
+
+    /* ------------------------------------------------- */
+    /* ------------------------------------------------- */
+    /* 3. NAVERGADOR */
+    .boton-menu-principal{
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 0.9em;
+    }
+
+    /* ------------------------------------------------- */
+    /* ------------------------------------------------- */
+    /* 5. HERO INDEX */
+    .buttonHeroPrev, .buttonHeroNext{
+        width: 40px;
+        height: 40px;
+    }
+
+    /* ------------------------------------------------- */
+    /* ------------------------------------------------- */
+    /* 13. INSCRIPCIÓN NEWSLETTER */
+    #inscricion-news{
+        display: block;
+    }
+
+    #input-news{
+        flex:1;
+        height: 40px;
+        margin: 0 0 0 0;
+    }
+
+    #button-news{
+        flex:1;
+        height: 40px;
+        margin: 20px 0 0 0;
+    }
+    
+}
+
+@media only screen and (max-width: 450px) {
+
+    /* ------------------------------------------------- */
+    /* ------------------------------------------------- */
+    /* 3. NAVERGADOR */
+    .boton-menu-principal{
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 0.9em;
+    }
+    .navbar-toggler img{
+        width: 20px;
+        margin: 0;
+    }
+    
+}
