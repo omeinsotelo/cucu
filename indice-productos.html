@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/funciones.js"></script>
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- SLICK SLIDER -->
+		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+		<script type="text/javascript" src="slick/slick.min.js"></script>
+    
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+
+    <!-- GOOGLE ICON -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <!-- metadatos  -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:description" content="">
+    <meta property="og:email" content="">
+
+
+    <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+
+</head>
+
+
+<body>
+
+    <!-- Modal -->
+
+    <div id="lightBox-Back"></div>
+    <!-- Fin Modal-->
+
+    <main>
+
+        <!-- CABECERA -->
+        <header class="container-fluid" id="header-page">
+
+          <!-- Carrusel Cabecera TOP-->
+          <div id="wrap-header-top">
+
+            <div id="carousel-header-top" class="carousel slide" data-bs-ride="carousel">
+
+              <div class="carousel-inner">
+                <!-- info slide-->
+                <div class="slider-header-top carousel-item w-100 active">
+                  <p>10% DE DESCUENTO POR TU PRIMERA COMPRA CON EL CUPÓN: 1COMPRACUCU</p>
+                </div>
+                <!-- info slide-->
+                <div class="slider-header-top carousel-item w-100">
+                  <p>20% DE DESCUENTO POR TU PRIMERA COMPRA CON EL CUPÓN: 1COMPRACUCU</p>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel-header-top" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel-header-top" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <!-- Fin Carrusel Cabecera TOP-->
+
+          <!-- **** -->
+
+          <!-- Área header-->
+          <div id="wrap-header"  class="container-fluid d-flex flex-row justify-content-between align-items-center">
+            <!-- costo y buscador -->
+            <div id="wrap-moneda-buscador-header" class="d-flex flex-row align-items-center">
+              <div id="wrap-moneda-header" class="d-flex flex-row align-items-center">
+                <span id="cuenta-pais">COL</span> <span id="cuenta-saparador">&nbsp;|&nbsp;</span> <span id="cuenta-moneda">$</span> <span id="cuenta-valor">450.000</span>
+              </div>
+              <div id="wrap-buscador-header">
+                <form id="search-header" name="search-header" action="" method="POST">
+                  <div class="d-flex flex-row align-items-center">
+                    <label for="field-search-header" class="">
+                      <img src="images/ico-search.svg" class="icono-header" alt="Buscar">
+                    </label>
+                    <input type="search" id="field-search-header" name="field-search-header" value="Encuentra lo que buscas" class="">
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <!-- Logo -->
+            <h1 id="logo-top-header">Cucu, Tienda de ropa infantil</h1>
+
+            <!-- menu auxiliar y carrito -->
+            <div id="wrap-menu-carrito-header" class="d-flex flex-row align-items-center justify-content-end">
+              
+              <!-- Menu de Cuentas -->
+              <label class="" for="check-cuenta">
+                <div class="enlace-header d-flex flex-row align-items-center" id="cuenta-header">
+                  <img src="images/ico-cuenta.svg" class="icono-header" alt="Cuenta de usuario">
+                  <span>Cuenta</span>
+                </div>
+              </label>
+              <input type="checkbox" class="hidden" id="check-cuenta">
+
+                        <!-- menu flotante cuenta -->
+                        <div class="" id="menu-cuenta">
+
+                          <div id="puntero-cuenta-box"></div>
+                          
+                          <label id="close-cuenta-movil" for="check-cuenta">
+                            <img src="images/ico-cerrar.svg" alt="icon close menu" id="close-ico-cuenta-movil">
+                          </label>   
+
+                          <h3 class="subtitulo-menu-cuenta">TU CUENTA</h3>
+                          <ul>
+                            <!-- Elemento menu cuenta (data-bs-target y aria-controls, deben coincidir con el id de la sublista ul)-->
+                            <li>
+                              <div class="wrap-enlace-acordeon-menu-cuenta" data-bs-toggle="collapse" data-bs-target="#submenu-miInformacion" aria-expanded="true" aria-controls="submenu-miInformacion">
+                                <a class="enlace-acordeon-menu-cuenta">Mi información</a>
+                                <span class="material-icons">expand_more</span>
+                              </div>
+                              <ul id="submenu-miInformacion" class="collapse">
+                                <li><a href="" class="subenlace-acordeon-menu-cuenta">Perfil</a></li>
+                                <li><a href="" class="subenlace-acordeon-menu-cuenta">Direcciones</a></li>
+                                <li><a href="" class="subenlace-acordeon-menu-cuenta">Métodos de pago</a></li>
+                                <li><a href="" class="subenlace-acordeon-menu-cuenta">Cambiar contraseñas</a></li>
+                              </ul>
+                            </li>
+                            <!-- Elemento menu cuenta (data-bs-target y aria-controls, deben coincidir con el id de la sublista ul)-->
+                            <li>
+                              <div class="wrap-enlace-acordeon-menu-cuenta" data-bs-toggle="collapse" data-bs-target="#submenu-miOrdenes" aria-expanded="true" aria-controls="submenu-miOrdenes">
+                                <a href="" class="enlace-acordeon-menu-cuenta">Mis órdenes</a>
+                                <span class="material-icons">expand_more</span>
+                              </div>
+                              <ul id="submenu-miOrdenes" class="collapse">
+                                <li><a href="" class="subenlace-acordeon-menu-cuenta"></a></li>
+                              </ul>
+                            </li>
+                            <!-- Elemento menu cuenta (data-bs-target y aria-controls, deben coincidir con el id de la sublista ul)-->
+                            <li>
+                              <div class="wrap-enlace-acordeon-menu-cuenta" data-bs-toggle="collapse" data-bs-target="#submenu-devoluciones" aria-expanded="true" aria-controls="submenu-devoluciones">
+                                <a href="" class="enlace-acordeon-menu-cuenta">Devoluciones</a>
+                                <span class="material-icons">expand_more</span>
+                              </div>
+                              <ul id="submenu-devoluciones" class="collapse">
+                                <li><a href="" class="subenlace-acordeon-menu-cuenta"></a></li>
+                              </ul>
+                            </li>
+                            <!-- Elemento menu cuenta (data-bs-target y aria-controls, deben coincidir con el id de la sublista ul)-->
+                            <li>
+                              <div class="wrap-enlace-acordeon-menu-cuenta" data-bs-toggle="collapse" data-bs-target="#submenu-giftCreditos" aria-expanded="true" aria-controls="submenu-giftCreditos">
+                                <a href="" class="enlace-acordeon-menu-cuenta">Gift Cards y Crédito</a>
+                                <span class="material-icons">expand_more</span>
+                              </div>
+                              <ul id="submenu-giftCreditos" class="collapse">
+                                <li><a href="" class="subenlace-acordeon-menu-cuenta"></a></li>
+                              </ul>
+                            </li>
+                            <!-- Elemento menu cuenta (data-bs-target y aria-controls, deben coincidir con el id de la sublista ul)-->
+                            <li>
+                              <div class="wrap-enlace-acordeon-menu-cuenta" data-bs-toggle="collapse" data-bs-target="#submenu-perfilHijos" aria-expanded="true" aria-controls="submenu-perfilHijos">
+                                <a href="" class="enlace-acordeon-menu-cuenta">Perfil de Hijos</a>
+                                <span class="material-icons">expand_more</span>
+                              </div>
+                              <ul id="submenu-perfilHijos" class="collapse">
+                                <li><a href="" class="subenlace-acordeon-menu-cuenta"></a></li>
+                              </ul> 
+                            </li>   
+                          </ul>
+                          <a href="" class="enlace-cerrar-menu-cuenta">Cerrar sesión</a>
+                        </div>
+                        <!-- Fin menu flotante cuenta -->
+
+
+              <!-- Cierre menu de Cuentas-->
+              <!-- ****** -->
+              
+              <a href="" class="d-flex flex-row align-items-center enlace-header">
+                <img src="images/ico-favoritos.svg" class="icono-header" alt="Productos favoritos">
+                <span>Favoritos</span>
+              </a>
+              <a href="" class="d-flex flex-row align-items-center enlace-header carrito-header">
+                <img src="images/ico-carrito.svg" class="icono-header" alt="carrito de compras">
+                <span>2</span>
+              </a>
+            </div>
+
+
+
+          </div>
+          <!-- Fin Área header-->
+
+
+        </header>
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+
+        <!-- MENÚ PRINCIPAL -->
+        <nav id="wrap-navegador-principal">
+          <ul id="navegador-principal">
+              <!-- Boton categorías-->
+              <li class="boton-categorias-principal">
+
+                  <label id="boton-categorias" for="check-categorias" class="d-flex flex-row align-items-center justify-content-center">
+                      <div id="wrap-ico-btVerCategorias">
+                        <img src="images/menu.svg" alt="icon view menu" id="open-ico">
+                        <img src="images/ico-cerrar.svg" alt="icon close menu" id="close-ico">
+                      </div>
+                      <span>Categorías</span>
+                  </label>
+                  <input type="checkbox" class="hidden" id="check-categorias">
+
+                          <!-- Menú categorías oculto -->
+                          <div id="wrap-categorias-nav">
+
+                            <label id="close-categorias-movil" for="check-categorias">
+                                <img src="images/ico-cerrar.svg" alt="icon close menu" id="close-ico-categorias-movil">
+                            </label>    
+
+                            <!-- Contenedor que organiza las categorías en dos columnas-->
+                            <div id="categorias-nav-content">
+
+                              <!-- Lista con toda la info de las categorías -->
+                              <ul id="lista-categorias-nav-content">
+                                
+                                <!-- Categoría ************************* -->
+                                <li class="item-categoria">
+                                  <!-- Item principal de la categoría -->
+                                  <button class="boton-item-principal-categoria">
+                                    <span class="label-boton-item-principal-categoria">Moda</span>
+                                    <span class="material-icons">chevron_right</span>
+                                  </button>
+                                  <!-- Finaliza el ítem principal -->
+                                  <!-- Contenedor sub categorías-->
+                                  <section class="wrap-subcategorias-nav">
+                                      <!-- grupo de categorías-->
+                                      <div class="subcategoria-nav">
+                                        <h3 class="subtitulo-subcategoria-nav">Por edades</h3>
+                                        <a href="" class="enlace-subcategoria-nav">Bebés 0-2 años</a>
+                                        <a href="" class="enlace-subcategoria-nav">Niños de 2-10 años</a>
+                                        <a href="" class="enlace-subcategoria-nav">Niños de 11-14 años</a>
+                                        <a href="" class="enlace-verTodo-subcategoria-nav">Ver todo</a>
+                                      </div>
+                                      <!-- fin grupo de categorías-->
+                                      <!-- grupo de categorías-->
+                                      <div class="subcategoria-nav">
+                                        <h3 class="subtitulo-subcategoria-nav">Por edad</h3>
+                                        <a href="" class="enlace-subcategoria-nav">Bebés 0-2 años</a>
+                                        <a href="" class="enlace-subcategoria-nav">Niños de 2-10 años</a>
+                                        <a href="" class="enlace-subcategoria-nav">Niños de 11-14 años</a>
+                                        <a href="" class="enlace-verTodo-subcategoria-nav">Ver todo</a>
+                                      </div>
+                                      <!-- fin grupo de categorías-->
+                                  </section>
+                                  <!-- Fin contenedor sub categorías-->
+                                </li>
+                                <!-- Fin Categoría -->
+
+                                <!-- *** -->
+
+                                <!-- Categoría ************************* -->
+                                <li class="item-categoria">
+                                  <!-- Item principal de la categoría -->
+                                  <button class="boton-item-principal-categoria">
+                                    <span class="label-boton-item-principal-categoria">Moda</span>
+                                    <span class="material-icons">chevron_right</span>
+                                  </button>
+                                  <!-- Finaliza el ítem principal -->
+                                  <!-- Contenedor sub categorías-->
+                                  <section class="wrap-subcategorias-nav">
+                                      <!-- grupo de categorías-->
+                                      <div class="subcategoria-nav">
+                                        <h3 class="subtitulo-subcategoria-nav">Por edad</h3>
+                                        <a href="" class="enlace-subcategoria-nav">Bebés 0-2 años</a>
+                                        <a href="" class="enlace-subcategoria-nav">Niños de 2-10 años</a>
+                                        <a href="" class="enlace-subcategoria-nav">Niños de 11-14 años</a>
+                                        <a href="" class="enlace-verTodo-subcategoria-nav">Ver todo</a>
+                                      </div>
+                                      <!-- fin grupo de categorías-->
+                                      <!-- grupo de categorías-->
+                                      <div class="subcategoria-nav">
+                                        <h3 class="subtitulo-subcategoria-nav">Por edad</h3>
+                                        <a href="" class="enlace-subcategoria-nav">Bebés 0-2 años</a>
+                                        <a href="" class="enlace-subcategoria-nav">Niños de 2-10 años</a>
+                                        <a href="" class="enlace-subcategoria-nav">Niños de 11-14 años</a>
+                                        <a href="" class="enlace-verTodo-subcategoria-nav">Ver todo</a>
+                                      </div>
+                                      <!-- fin grupo de categorías-->
+                                      <!-- grupo de categorías-->
+                                      <div class="subcategoria-nav">
+                                        <h3 class="subtitulo-subcategoria-nav">Por edad</h3>
+                                        <a href="" class="enlace-subcategoria-nav">Bebés 0-2 años</a>
+                                        <a href="" class="enlace-subcategoria-nav">Niños de 2-10 años</a>
+                                        <a href="" class="enlace-subcategoria-nav">Niños de 11-14 años</a>
+                                        <a href="" class="enlace-verTodo-subcategoria-nav">Ver todo</a>
+                                      </div>
+                                      <!-- fin grupo de categorías-->
+                                  </section>
+                                  <!-- Fin contenedor sub categorías-->
+                                </li>
+                                <!-- Fin Categoría -->
+                              </ul>
+                              <!-- Lista con toda la info de las categorías -->
+
+                              <!-- Contenedor que recibe las subcategorías al click / No borrar auque está vacío -->
+                              <div id="subcategorias-nav-content">
+
+                              </div>
+                              <!-- Fin Contenedor que recibe las subcategorías al click / No borrar auque está vacío  -->
+
+                            </div>
+                            <!-- Fin contenedor que organiza las categorías en dos columnas-->
+
+                          </div>
+                          <!-- Fin Menú categorías oculto-->
+
+
+
+              </li>
+              <!-- menu normal-->
+              <li><a href="" class="boton-menu-principal">Lo Nuevo</a></li>
+              <li><a href="" class="boton-menu-principal">Gift Cards</a></li>
+              <li><a href="" class="boton-menu-principal">Marcas</a></li>
+              <li><a href="" class="boton-menu-principal bt-ofertas">Ofertas <span>del día</span></a></li>
+              <li><a href="" class="boton-menu-principal bt-cucu-world">Cucu World</a></li>
+            </ul>
+
+        </nav>
+        <!-- Finaliza el menú principal -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- BREADCRUMBS -->
+
+        <nav aria-label="breadcrumb" id="wrap-breadcrumbs">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Item bread</a></li>
+            <li class="breadcrumb-item"><a href="#">Item bread</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Current</li>
+          </ol>
+        </nav>
+
+        <!-- Finaliza el breadcrumbs -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+
+
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- CONTENEDOR PRINCIPAL DE FILTROS Y PRODUCTOS -->
+
+        <div id="cabecera-seccion">
+            <div id="wrap-categoria-global-cabecera-seccion">
+              <h4 class="categoria-global-cabecera-seccion">MODA</h4>
+              <h4 class="categoria-global-cabecera-seccion">ROPA PARA NIÑAS</h4>
+            </div>
+            <h2 class="categoria-cabecera-seccion">Vestidos</h2>
+            <!-- figuras -->
+            <img src="images/Trazado245.png" alt="adorno en página" class="adorno-cabecera-seccion" id="adorno-cabecera-seccion-1">
+            <img src="images/Trazado247.png" alt="adorno en página" class="adorno-cabecera-seccion" id="adorno-cabecera-seccion-2">
+            <img src="images/Trazado246.png" alt="adorno en página" class="adorno-cabecera-seccion" id="adorno-cabecera-seccion-3">
+            <img src="images/Trazado248.png" alt="adorno en página" class="adorno-cabecera-seccion" id="adorno-cabecera-seccion-4">
+        </div>
+
+        <!-- inicia el contenedor de la columna de filtros y de la columna de productos-->
+        <div id="wrap-indice-filtro-productos" class="row">
+
+          <!-- inicia la columna de filtros-->
+          <div id="wrap-filtro-productos">
+
+
+            <!-- contenedor de "ordenar por"-->
+            <div id="wrap-ordenar-por" class="contenedor-filtro">
+ 
+              <button  class="wrap-titulo-filtro" id="up-down-ordenar-por" type="button" data-expand="false">
+                <h3 class="titulo-filtro">ORDENAR POR</h3>
+                <span class="info-filtro" data-value="Más vendidos"></span>
+                <span class="material-icons down-filtro">expand_more</span>
+              </button>
+              
+
+              <!-- Contenedor para ocultar los filtros en el movil -->
+              <div class="contenedor-movil-columna-ordenar-por">
+                
+                <!-- Listado de filtros Ordenar por.... -->
+                <div class="wrap-listado-filtros accordion">
+                  <div class="accordion-item">
+                    <h4 class="accordion-header">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOrdenar" aria-expanded="true" aria-controls="collapseOrdenar">
+                          Más vendidos
+                      </button>
+                    </h4>
+
+                    <ul class="lista-filtros accordion-collapse collapse show"  id="collapseOrdenar">
+                      <li>
+                        <input type="checkbox" name="mas-vendidos" id="mas-vendidos">
+                        <label for="mas-vendidos">Más vendidos</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" name="" id="">
+                        <label for="mas-vendidos">Más vendidos</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" name="" id="">
+                        <label for="mas-vendidos">Más vendidos</label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Fin listado de filtros Ordenar por... -->
+
+              </div>
+              <!-- Fin contenedor que oculta los filtros en el movil -->
+
+            </div>
+            <!-- fin contenedor de "ordenar por"-->
+            <!-- *********** -->
+
+
+            <!-- contenedor de "Filtros"-->
+            <div id="wrap-filtros" class="contenedor-filtro">
+
+
+              <button class="wrap-titulo-filtro" id="up-down-filtros" type="button" data-expand="false">
+                <h3 class="titulo-filtro">FILTROS</h3>
+                <span class="info-filtro" data-value="200 ítems">Encuentra el producto que buscas aquí</span>
+                <span class="material-icons down-filtro">expand_more</span>
+              </button>
+
+              <!-- Contenedor para ocultar los filtros en el movil -->
+              <div class="contenedor-movil-columna-filtros" data-visible="false">
+
+                <!-- Listado de filtros Seleccionados.... -->
+                <div class="wrap-listado-filtros accordion">
+                  <div class="accordion-item">
+                    <h4 class="accordion-header">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAplicados" aria-expanded="true" aria-controls="collapseAplicados">
+                          Filtros aplicados (<span>4</span>)
+                      </button>
+                    </h4>
+
+                    <div class="lista-filtros accordion-collapse collapse show"  id="collapseAplicados">
+
+                      <ul class="lista-filtros-seleccionados">
+                        <li>
+                          <div>
+                            <span class="tipologia-lista-filtros">Tipos</span>
+                            <span class="nombre-lista-filtros">Manga larga</span>
+                          </div>
+                          <button type="button" role="button"><span class="material-icons remove-lista-filtros">clear</span></button>
+                        </li>
+                        <li>
+                          <div>
+                            <span class="tipologia-lista-filtros">Tipos</span>
+                            <span class="nombre-lista-filtros">Manga larga</span>
+                          </div>
+                          <button type="button" role="button"><span class="material-icons remove-lista-filtros">clear</span></button>
+                        </li>
+                        <li>
+                          <div>
+                            <span class="tipologia-lista-filtros">Tipos</span>
+                            <span class="nombre-lista-filtros">Manga larga</span>
+                          </div>
+                          <button type="button" role="button"><span class="material-icons remove-lista-filtros">clear</span></button>
+                        </li>
+                      </ul>
+                      <a href="" class="boton back2 w-100 bt-filtros">BORRAR TODOS LOS FILTROS</a>
+                    </div>
+
+                  </div>
+                </div>
+                <!-- Fin listado de filtros Seleccionados... -->
+                <!-- **** -->
+
+
+                <!-- Listado de filtros Tipo -->
+                <div class="wrap-listado-filtros accordion">
+                  <div class="accordion-item">
+                    <h4 class="accordion-header">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTipos" aria-expanded="true" aria-controls="collapseTipos">
+                          Tipos
+                      </button>
+                    </h4>
+
+                    <ul class="lista-filtros accordion-collapse collapse show"  id="collapseTipos">
+                      <li>
+                        <input type="checkbox" name="manga-larga" id="manga-larga">
+                        <label for="manga-larga">Manga larga (<span>30</span>)</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" name=" " id=" ">
+                        <label for=" ">Manga larga (<span>30</span>)</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" name=" " id=" ">
+                        <label for=" ">Manga larga (<span>30</span>)</label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Fin Listado de filtros Tipo... -->
+                <!--****-->
+
+
+                <!-- Listado de filtros Genero -->
+                <div class="wrap-listado-filtros accordion">
+                  <div class="accordion-item">
+                    <h4 class="accordion-header">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGenero" aria-expanded="true" aria-controls="collapseGenero">
+                          Género
+                      </button>
+                    </h4>
+
+                    <ul class="lista-filtros accordion-collapse collapse show"  id="collapseGenero">
+                      <li>
+                        <input type="checkbox" name="" id="">
+                        <label for="manga-larga">Opcion 1</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" name=" " id=" ">
+                        <label for=" ">Opcion 2</label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Fin Listado de filtros Genero... -->
+                <!--****-->
+
+
+                <!-- Listado de filtros Marca -->
+                <div class="wrap-listado-filtros accordion">
+                  <div class="accordion-item">
+                    <h4 class="accordion-header">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMarca" aria-expanded="true" aria-controls="collapseMarca">
+                          Marca
+                      </button>
+                    </h4>
+
+                    <div class=" accordion-collapse collapse show"  id="collapseMarca">
+
+                      <form class="wrap-search-filtros" name="" method="POST" action="">
+                        <button type="submit" class="bt-ico-search-filtros">
+                          <span class="material-icons">search</span>
+                        </button>
+                        <input type="search" name="" class="input-search-filtros">
+                      </form>
+
+                      <ul class="lista-filtros">
+                        <li>
+                          <input type="checkbox" name="" id="">
+                          <label for="manga-larga">Opcion 1</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" name=" " id=" ">
+                          <label for=" ">Opcion 2</label>
+                        </li>
+                      </ul>
+
+                    </div>
+
+                  </div>
+                </div>
+                <!-- Fin Listado de filtros Marca... -->
+                <!--****-->
+
+
+                <!-- Listado de filtros Edad -->
+                <div class="wrap-listado-filtros accordion">
+                  <div class="accordion-item">
+                    <h4 class="accordion-header">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEdad" aria-expanded="true" aria-controls="collapseEdad">
+                          Edad
+                      </button>
+                    </h4>
+
+                    <ul class="lista-filtros accordion-collapse collapse show"  id="collapseEdad">
+                      <li>
+                        <input type="checkbox" name="" id="">
+                        <label for="manga-larga">Opcion 1</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" name=" " id=" ">
+                        <label for=" ">Opcion 2</label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Fin Listado de filtros Marca... -->
+                <!--****-->
+
+
+                <!-- Listado de filtros Talla -->
+                <div class="wrap-listado-filtros accordion">
+                  <div class="accordion-item">
+                    <h4 class="accordion-header">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTalla" aria-expanded="true" aria-controls="collapseTalla">
+                        Talla
+                      </button>
+                    </h4>
+
+                    <ul class="lista-filtros accordion-collapse collapse show"  id="collapseTalla">
+                      <li>
+                        <input type="checkbox" name="" id="">
+                        <label for="manga-larga">Opcion 1</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" name=" " id=" ">
+                        <label for=" ">Opcion 2</label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Fin Listado de filtros Talla... -->
+                <!--****-->
+
+
+                <!-- Listado de filtros Color -->
+                <div class="wrap-listado-filtros accordion">
+                  <div class="accordion-item">
+                    <h4 class="accordion-header">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseColor" aria-expanded="true" aria-controls="collapseColor">
+                        Color
+                      </button>
+                    </h4>
+
+                    <ul class="lista-filtros accordion-collapse collapse show"  id="collapseColor">
+                      <li>
+                        <div class="square-filtro-color" style="background-color: aqua;"></div>
+                        <input type="checkbox" id="color1" name="color1" class="hidden colorCheck">
+                        <label for="color1" class="nombre-lista-filtros">Color 1</label>
+                        
+                      </li>
+                      <li>
+                        <div class="square-filtro-color" style="background-color: #f700ff;"></div>
+                        <input type="checkbox" id="color2" name="color2" class="hidden colorCheck">
+                        <label for="color2" class="nombre-lista-filtros">Color 2</label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Fin Listado de filtros Color... -->
+                <!--****-->
+
+                <!-- Listado de filtros Precio -->
+                <div class="wrap-listado-filtros accordion">
+                  <div class="accordion-item">
+                    <h4 class="accordion-header">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePrecio" aria-expanded="true" aria-controls="collapsePrecio">
+                        Precio
+                      </button>
+                    </h4>
+
+                    <div class="lista-filtros accordion-collapse collapse show"  id="collapsePrecio">
+
+                      <form id="wrap-precio-filtros" name="" method="POST" action="">
+                        <div id="wrap-min-max-precio-filtros">
+                          <p id="min-precio-filtros">$50mil</p>
+                          <p id="max-precio-filtros">$250mil</p>
+                        </div>
+                        <!-- <input type="range" class="form-range" min="50" max="250" step="0.5">-->
+
+                        <div id="wrap-range-precio-filtros">
+                          <input value="50" min="50" max="250" step="0.5" type="range" id="range-min-precio-filtros">
+                          <input value="250" min="50" max="250" step="0.5" type="range" id="range-max-precio-filtros">
+                        </div>
+
+                      </form>
+
+                      <a href="" class="boton back2 w-100 bt-filtros">APLICAR FILTRO DE PRECIO</a>
+
+                    </div>
+
+                  </div>
+                </div>
+                <!-- Fin Listado de filtros Precio... -->
+                <!--****-->
+
+              </div>
+              <!-- Fin Contenedor para ocultar los filtros en el movil -->
+
+            </div>
+            <!-- fin contenedor de "Filtros"-->
+
+          </div>
+          <!-- finaliza la columna de filtros-->
+          <!-- *********** -->
+          <!-- *********** -->
+
+          <!-- inicia la columna de indice de productos-->
+          <div  id="wrap-indice-productos">
+
+            <!-- Inica el contenedor de productos-->
+            <div id="indice-productos">
+            
+                        <!-- Producto -->
+                        <div class="wrap-articulo-indice">
+
+                            <div class="thumb-articulo-indice">
+                              
+                              <!-- Favorito -->
+                              <div class="favorite-icon-thumb-articulo-indice">
+                                <span class="material-icons">favorite</span>
+                              </div>
+
+                              <!-- descuento -->
+                              <div class="descuento-thumb-articulo-indice">
+                                -20%
+                              </div>
+
+                              <!-- Boton de compra -->
+                              <a href="" class="boton back5 bt-articulo-indice">COMPRA RÁPIDA</a>
+
+                              <img src="images/Grupo 264.png" alt="">
+
+                            </div>
+
+                            <div class="info-articulo-indice">
+                              <h4 class="cat-articulo-indice">Categoria</h4>
+                              <a href="" class="nombre-articulo-indice"><h3>Nombre del producto</h3></a>
+                              <div class="wrap-precio-articulo-indice">
+                                <span class="precio-articulo-indice">$500.000</span>
+                              </div>  
+                            </div>
+
+                        </div>
+                        <!-- Fin del Producto --------- -->
+
+                        <!-- Producto -->
+                        <div class="wrap-articulo-indice">
+
+                          <div class="thumb-articulo-indice">
+                            
+                            <!-- Favorito -->
+                            <div class="favorite-icon-thumb-articulo-indice">
+                              <span class="material-icons">favorite</span>
+                            </div>
+
+                            <!-- descuento -->
+                            <div class="descuento-thumb-articulo-indice">
+                              -20%
+                            </div>
+
+                            <!-- Boton de compra -->
+                            <a href="" class="boton back5 bt-articulo-indice">COMPRA RÁPIDA</a>
+
+                            <img src="images/Grupo 264.png" alt="">
+
+                          </div>
+
+                          <div class="info-articulo-indice">
+                            <h4 class="cat-articulo-indice">Categoria</h4>
+                            <a href="" class="nombre-articulo-indice"><h3>Nombre del producto</h3></a>
+                            <div class="wrap-precio-articulo-indice">
+                              <span class="precio-articulo-indice-anterior">$500.000</span>
+                              <span class="precio-articulo-indice-actual">$500.000</span>
+                            </div>  
+                          </div>
+
+                      </div>
+                      <!-- Fin del Producto --------- -->
+
+                      <!-- Producto -->
+                      <div class="wrap-articulo-indice">
+
+                        <div class="thumb-articulo-indice">
+                          
+                          <!-- Favorito -->
+                          <div class="favorite-icon-thumb-articulo-indice">
+                            <span class="material-icons">favorite</span>
+                          </div>
+
+                          <!-- descuento -->
+                          <div class="descuento-thumb-articulo-indice">
+                            -20%
+                          </div>
+
+                          <!-- Boton de compra -->
+                          <a href="" class="boton back5 bt-articulo-indice">COMPRA RÁPIDA</a>
+
+                          <img src="images/Grupo 264.png" alt="">
+
+                        </div>
+
+                        <div class="info-articulo-indice">
+                          <h4 class="cat-articulo-indice">Categoria</h4>
+                          <a href="" class="nombre-articulo-indice"><h3>Nombre del producto</h3></a>
+                          <div class="wrap-precio-articulo-indice">
+                            <span class="precio-articulo-indice-anterior">$500.000</span>
+                            <span class="precio-articulo-indice-actual">$500.000</span>
+                          </div>  
+                        </div>
+
+                    </div>
+                    <!-- Fin del Producto --------- -->
+
+                    <!-- Producto -->
+                    <div class="wrap-articulo-indice">
+
+                      <div class="thumb-articulo-indice">
+                        
+                        <!-- Favorito -->
+                        <div class="favorite-icon-thumb-articulo-indice">
+                          <span class="material-icons">favorite</span>
+                        </div>
+
+                        <!-- descuento -->
+                        <div class="descuento-thumb-articulo-indice">
+                          -20%
+                        </div>
+
+                        <!-- Boton de compra -->
+                        <a href="" class="boton back5 bt-articulo-indice">COMPRA RÁPIDA</a>
+
+                        <img src="images/Grupo 264.png" alt="">
+
+                      </div>
+
+                      <div class="info-articulo-indice">
+                        <h4 class="cat-articulo-indice">Categoria</h4>
+                        <a href="" class="nombre-articulo-indice"><h3>Nombre del producto</h3></a>
+                        <div class="wrap-precio-articulo-indice">
+                          <span class="precio-articulo-indice-anterior">$500.000</span>
+                          <span class="precio-articulo-indice-actual">$500.000</span>
+                        </div>  
+                      </div>
+
+                  </div>
+                  <!-- Fin del Producto --------- -->
+
+            </div>
+            <!-- finaliza el contenedor de productos-->
+            <div id="wrap-contador-indice-productos">
+
+              <div id="contador-indice-productos"></div>
+  
+              <a href="" class="boton back2">CARGAR MÁS PRODUCTOS</a>
+            </div>
+
+
+          </div>
+          <!-- finaliza la columna de indice de productos-->
+          <!-- *********** -->
+          <!-- *********** -->
+
+          
+
+        </div>
+        <!-- finaliza el contenedor de la columna de filtros y de la columna de productos-->
+
+        <!-- Finaliza el contenedor principal de filtros y productos -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+
+
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- BOTÓN TOP -->
+
+        <div class="boton-go-top-columna">
+          <button id="boton-go-top"  type="button" role="button">
+            <div id="wrap-ico-go-top">
+              <span class="material-icons">expand_less</span>
+            </div>
+            <span id="label-boton-go-top">IR ARRIBA</span>
+          </button>
+        </div>
+
+        <!-- Finaliza Botón TOP -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+
+
+
+
+        
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- FOOTER -->
+        <footer id="footer-page">
+          <div id="wrap-info-footer">
+
+            <!-- Servicio al Cliente-->
+            <div class="columna-info-footer">
+              <h2>SERVICIO AL CLIENTE</h2>
+              <a href="">Envíos y devoluciones</a>
+              <a href="">Garantías</a>
+              <a href="">Preguntas Frecuentes</a>
+              <a href="">Políticas de privacidad</a>
+              <a href="">Términos y condiciones</a>
+              <a href="">Contáctanos</a>
+              <p>Medios de pagos admitidos</p>
+              <div class="pagos-footer">
+                <img src="images/pagos1_03.png" alt="">
+                <img src="images/pagos1_05.png" alt="">
+                <img src="images/pagos1_07.png" alt="">
+                <img src="images/pagos1_09.png" alt="">
+                <img src="images/pagos1_11.png" alt="">
+                <img src="images/pagos2_03.png" alt="">
+                <img src="images/pagos2_05.png" alt="">
+                <img src="images/pagos2_07.png" alt="">
+              </div>
+            </div>
+            <!-- Fin Servicio al Cliente-->
+
+            <!-- Contáctanos-->
+            <div class="columna-info-footer">
+              <h2>CONTÁCTANOS</h2>
+              <p>Oficinas administrativas <br>
+                Bogotá, Colombia <br>
+                +57320123435<br>+57320123435</p>
+                <a href="mailto:servicioalcliente@cucushop.co">servicioalcliente@cucushop.co</a>
+
+                <div id="wrap-rrss-footer" class="d-flex flex-row align-items-center justify-content-center">
+                  <a href="" class="rrss-footer">
+                    <img src="images/simbolo-de-la-aplicacion-de-facebook.svg" alt="logo facebook">
+                  </a>
+                  <a href="" class="rrss-footer">
+                    <img src="images/logotipo-de-instagram.svg" alt="logo instagram">
+                  </a>
+                </div>
+            </div>
+            <!-- Fin Contáctanos -->
+
+            <!-- CUCU Shop -->
+            <div class="columna-info-footer">
+              <h2>CUCU SHOP MARKET PLACE</h2>
+              <a href="">Acerca de nosotros</a>
+              <a href="">Marcas aliadas</a>
+              <a href="">Cómo vender con nosotros</a>
+              <a href="">Cómo comprar con nosotros</a>
+              <a href="">Prensa</a>
+              <a href="">Compromiso ambiental y social</a>
+              <a href="">Guía de tallas</a>
+
+              <br><br><br>
+
+              <p>© 2021 Cucu Shop Marketplace</p>
+            </div>
+            <!-- Fin CUCU Shop -->
+
+          </div>
+        </footer>
+        <!-- Finaliza Footer -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+        <!-- *********** -->
+        
+          
+
+    </main>
+
+  </body>
+
+</html>
