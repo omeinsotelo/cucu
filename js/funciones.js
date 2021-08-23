@@ -43,11 +43,13 @@ $(document).ready(function(){
 	});
 
 	/* --------------------------------------------------------------- */
+	/* --------------------------------------------------------------- */
+	/* --------------------------------------------------------------- */
+	/* --------------------------------------------------------------- */
 
 
 
 	/* CUENTA ============================================================= */
-
 	/* Ver cuenta */
 	$("#cuenta-header").click(function(){
 		
@@ -64,6 +66,11 @@ $(document).ready(function(){
 		$("#lightBox-Back").removeClass("show-lightBox-Back-2");
 		$("body").removeClass("fixed-body");	
 	});
+	/* --------------------------------------------------------------- */
+	/* --------------------------------------------------------------- */
+	/* --------------------------------------------------------------- */
+
+
 
 	/* TAB CATEGORIAS ============================================================= */
 	$("#nav-tabContent").slick({
@@ -85,9 +92,12 @@ $(document).ready(function(){
 		var posicion = $(this).index();
 		$("#nav-tabContent").slick('slickGoTo', posicion);
 	});
+	/* --------------------------------------------------------------- */
+	/* --------------------------------------------------------------- */
+	/* --------------------------------------------------------------- */
 
 
-
+	/* CARRUSELES ============================================================ */
 	$("#carrusel-juguetes").slick({
 		slidesToShow: 4,
 		slidesToScroll: 1,
@@ -384,6 +394,165 @@ $(document).ready(function(){
 		]
 	});
 
+	/* Carrusel producto ampliado */
+
+	$('#slider-galeria-producto-ampliado').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: true,
+		prevArrow:'#flecha-left-galeria-producto-ampliado',
+		nextArrow:'#flecha-right-galeria-producto-ampliado',
+	});
+
+	function moveGaleria(posicion){
+		$("#slider-galeria-producto-ampliado").slick('slickGoTo', posicion);
+	}
+	
+	$("#wrap-thumbs-producto-ampliado").children("img").click(function(){
+		var posi = $(this).index();
+		moveGaleria(posi);
+	});
+
+	
+
+	/* --------------------------------------------------------------- */
+	/* --------------------------------------------------------------- */
+	/* --------------------------------------------------------------- */
+
+
+	/* RANGOS ============================================================= */
+	$(document).on('input', '#range-min-precio-filtros', function() {
+		$('#min-precio-filtros').html(  "$" + Math.round( $(this).val() ) + "mil");
+	});
+
+	$(document).on('input', '#range-max-precio-filtros', function() {
+		$('#max-precio-filtros').html(  "$" + Math.round( $(this).val() ) + "mil");
+	});
+	/* --------------------------------------------------------------- */
+	/* --------------------------------------------------------------- */
+	/* --------------------------------------------------------------- */
+
+
+	/* BOTON GO TOP ============================================================= */
+
+	$("#boton-go-top").click(function(){
+		$("html, body").animate({ scrollTop: 0 }, 500, 'swing');
+		return false;
+	});
+
+	/* --------------------------------------------------------------- */
+	/* --------------------------------------------------------------- */
+
+
+
+	/* FILTROS  ============================================================= */
+	/* Ver cuenta */
+	$( window ).resize(function() {
+		changeTxtFiltro();
+	});
+
+	function changeTxtFiltro(){
+		var numInfoFiltro = $(".info-filtro").length;
+
+		if($( window ).width() < 980){
+			for(var i = 0; i < numInfoFiltro; i++){
+				var dataInfoFiltro = $(".info-filtro").eq(i).data("value");
+				$(".info-filtro").eq(i).text(dataInfoFiltro);
+			}
+		}
+
+	}
+	changeTxtFiltro();
+	
+	$("#up-down-ordenar-por").click(function(){
+		var expand = $(this).data("expand");
+		if(expand == false){
+			$(this).children(".down-filtro").addClass("up-filtro");
+			$(this).data("expand", true);
+		}else{
+			$(this).children(".down-filtro").removeClass("up-filtro");
+			$(this).data("expand", false);
+		}
+		$("#up-down-filtros").children(".down-filtro").removeClass("up-filtro");
+		$("#up-down-filtros").data("expand", false);
+		$(".contenedor-movil-columna-filtros").slideUp();
+		$(".contenedor-movil-columna-ordenar-por").slideToggle();
+	});
+
+	$("#up-down-filtros").click(function(){
+		var expand = $(this).data("expand");
+		if(expand == false){
+			$(this).children(".down-filtro").addClass("up-filtro");
+			$(this).data("expand", true);
+		}else{
+			$(this).children(".down-filtro").removeClass("up-filtro");
+			$(this).data("expand", false);
+		}
+		$("#up-down-ordenar-por").children(".down-filtro").removeClass("up-filtro");
+		$("#up-down-ordenar-por").data("expand", false);
+		$(".contenedor-movil-columna-ordenar-por").slideUp();
+		$(".contenedor-movil-columna-filtros").slideToggle();
+	});
+
+	/* ------------------------ */
+
+	/* PRODUCTO AMPLIADO  ============================================================= */
+	/* TALLE */
+	$(".talle-variantes-producto-ampliado").click(function(){
+		var numTalles = $(".talle-variantes-producto-ampliado").length;
+		
+		for(var i=0; i < numTalles; i++){
+			$(".talle-variantes-producto-ampliado").eq(i).removeClass("talle-enable");
+		}
+
+		$(this).addClass("talle-enable");
+
+	});
+
+	/* MAS INFO TABS */
+	$(".header-masinformacion-producto-ampliado").click(function(){
+		var pos = $(this).index();
+		verTabsMasInfo(pos);
+	});
+
+	function verTabsMasInfo(posicion){
+		var numTabs = $(".header-masinformacion-producto-ampliado").length;
+		
+		for(var i=0; i < numTabs; i++){
+			$(".header-masinformacion-producto-ampliado").eq(i).removeClass("header-masinformacion-producto-ampliado-activo");
+			$(".tab-masinformacion-producto-ampliado").eq(i).css("display", "none");
+		}
+
+		$(".header-masinformacion-producto-ampliado").eq(posicion).addClass("header-masinformacion-producto-ampliado-activo");
+		$(".tab-masinformacion-producto-ampliado").eq(posicion).slideDown();
+	}
+	verTabsMasInfo(0);
+
+	/* AGREGAR PRODUCTO */
+	function showAddCart(){
+		
+		$("#wrap-columna-addCart").addClass("show-columna-addCart");
+		$("#lightBox-Back").addClass("show-lightBox-Back-3");
+		$("body").addClass("fixed-body");
+	}
+
+	function hideAddCart(){
+		$("#wrap-columna-addCart").removeClass("show-columna-addCart");
+		$("#lightBox-Back").removeClass("show-lightBox-Back-3");
+		$("body").removeClass("fixed-body");
+	}
+	
+	$("#addCart").click(function(){
+		showAddCart();
+		return false;
+	});
+
+	$("#close-addCart").click(function(){
+		hideAddCart();
+		return false;
+	});
+
+	
 
 
 });
