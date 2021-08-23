@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="5501.339" viewBox="0 0 1920 5501.339">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectángulo_664" data-name="Rectángulo 664" width="1920" height="5501.339" transform="translate(0 0.001)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_913" data-name="Grupo 913" transform="translate(0 -0.001)" clip-path="url(#clip-path)">
+    <rect id="Rectángulo_660" data-name="Rectángulo 660" width="16.621" height="16.622" transform="translate(1141.818 928.022)" fill="#ffd000"/>
+    <rect id="Rectángulo_661" data-name="Rectángulo 661" width="16.621" height="16.622" transform="translate(1141.818 928.022)" fill="none" stroke="#006a75" stroke-miterlimit="10" stroke-width="1"/>
+    <line id="Línea_83" data-name="Línea 83" x2="1559.047" transform="translate(166.135 1736.102)" fill="#1d7b83"/>
+    <rect id="Rectángulo_662" data-name="Rectángulo 662" width="1559.047" height="0.5" transform="translate(166.133 1735.852)" fill="#1d7b83"/>
+    <line id="Línea_84" data-name="Línea 84" x2="1599.481" transform="translate(175.717 2731.085)" fill="#1d7b83"/>
+    <rect id="Rectángulo_663" data-name="Rectángulo 663" width="1599.482" height="0.5" transform="translate(175.716 2730.835)" fill="#1d7b83"/>
+    <path id="Trazado_353" data-name="Trazado 353" d="M1030.154,1671.168h2.459v-4.282a31.832,31.832,0,0,0-3.582-.19c-3.545,0-5.973,2.23-5.973,6.328v3.771h-3.911v4.787h3.911v12.044h4.8v-12.043h3.753l.6-4.787h-4.35v-3.3c0-1.384.373-2.331,2.3-2.331" fill="#1d7b83"/>
+  </g>
+</svg>
