@@ -413,7 +413,124 @@ $(document).ready(function(){
 		moveGaleria(posi);
 	});
 
-	
+	/* Carruseles internos */
+	$('#carrusel-productos-relacionados').slick({
+		slidesToShow: 5,
+		slidesToScroll: 1,
+		arrows: true,
+		infinite: true,
+		prevArrow:'#flecha-left-carrusel-relacionados',
+		nextArrow:'#flecha-right-carrusel-relacionados',
+		responsive: [
+			{
+			breakpoint: 1100,
+			settings: {
+				slidesToShow: 4,
+				slidesToScroll: 1,
+				}
+			},
+			{
+			breakpoint: 960,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 1,
+				}
+			},
+			{
+			breakpoint: 750,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 1,
+				}
+			},
+			{
+			breakpoint: 550,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				}
+			}
+		]
+	});
+
+	$('#carrusel-productos-similares').slick({
+		slidesToShow: 5,
+		slidesToScroll: 1,
+		arrows: true,
+		infinite: true,
+		prevArrow:'#flecha-left-carrusel-similares',
+		nextArrow:'#flecha-right-carrusel-similares',
+		responsive: [
+			{
+			breakpoint: 1100,
+			settings: {
+				slidesToShow: 4,
+				slidesToScroll: 1,
+				}
+			},
+			{
+			breakpoint: 960,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 1,
+				}
+			},
+			{
+			breakpoint: 750,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 1,
+				}
+			},
+			{
+			breakpoint: 550,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				}
+			}
+		]
+	});
+
+
+	$('#carrusel-productos-recien-vistos').slick({
+		slidesToShow: 5,
+		slidesToScroll: 1,
+		arrows: true,
+		infinite: true,
+		prevArrow:'#flecha-left-carrusel-recien-vistos',
+		nextArrow:'#flecha-right-carrusel-recien-vistos',
+		responsive: [
+			{
+			breakpoint: 1100,
+			settings: {
+				slidesToShow: 4,
+				slidesToScroll: 1,
+				}
+			},
+			{
+			breakpoint: 960,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 1,
+				}
+			},
+			{
+			breakpoint: 750,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 1,
+				}
+			},
+			{
+			breakpoint: 550,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				}
+			}
+		]
+	});
 
 	/* --------------------------------------------------------------- */
 	/* --------------------------------------------------------------- */
