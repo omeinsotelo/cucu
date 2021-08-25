@@ -33,6 +33,7 @@ Version:
 18. PRODUCTO AMPLIADO
 19. ADD CART
 20. FORMULARIOS
+21. CARRUSELES INTERNOS
 
 
 
@@ -2561,6 +2562,25 @@ input[type="range"]::-webkit-slider-thumb {
     color: var(--color2);
 }
 
+
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+
+/* 21. CARRUSELES INTERNOS */
+.wrap-carrusel-producto{
+    width: 100%;
+    max-width: 90vw;
+    margin: 0 auto;
+    padding: 30px 0;
+    border-top: 1px solid var(--color2);
+}
+
+#productos-relacionados, #productos-similares, #recien-vistos{
+    width: 100%;
+    position: relative;
+}
 
 /* ------------------------------------------------- */
 /* ------------------------------------------------- */
