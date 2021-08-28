@@ -669,7 +669,51 @@ $(document).ready(function(){
 		return false;
 	});
 
-	
+	/* ------------------------ */
+
+	/* FORMULARIOS  ============================================================= */
+	/* TAB FORMULARIOS */
+	$(".bt-tab-IngresoRegistro").click(function(){
+		var pos = $(this).index();
+		verTabFormulario(pos);
+	});
+
+	function verTabFormulario(posicion){
+		var numTabsForm = $(".bt-tab-IngresoRegistro").length;
+		
+		for(var i=0; i < numTabsForm; i++){
+			$(".bt-tab-IngresoRegistro").eq(i).removeClass("bt-tab-IngresoRegistro-activo");
+			$(".form-IngresoRegistro").eq(i).css("display", "none");
+		}
+		$(".bt-tab-IngresoRegistro").eq(posicion).addClass("bt-tab-IngresoRegistro-activo");
+		$(".form-IngresoRegistro").eq(posicion).css("display", "block");
+	};
+
+	verTabFormulario(0);
+
+	$("#bt-registrate").click(function(){
+		verTabFormulario(1);
+	});
+
+	$("#bt-ingresa").click(function(){
+		verTabFormulario(0);
+	});
+
+
+	/* VER PASSWORD */
+	$(".ico-ver-pass").click(function(){
+		verPassword($(this));
+	});
+
+	function verPassword(boton){
+		if($(boton).next().attr("type") === "password"){
+			$(boton).next().attr("type", "text");
+			$(boton).css("opacity", "1");
+		}else{
+			$(boton).next().attr("type", "password");
+			$(boton).css("opacity", "0.5");
+		}
+	};
 
 
 });
