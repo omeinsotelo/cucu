@@ -34,6 +34,7 @@ Version:
 19. ADD CART
 20. FORMULARIOS
 21. CARRUSELES INTERNOS
+22. CUENTA - REGISTRO
 
 
 
@@ -2551,14 +2552,107 @@ input[type="range"]::-webkit-slider-thumb {
 /* ------------------------------------------------- */
 
 /* 20. FORMULARIOS */
+.row-formulario{
+    margin: 25px 0 25px 0;
+    width: 100%;
+    padding: 0 10px;
+}
+.row-formulario > *{
+    width: 100%;
+}
+.row-formulario-doble{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
 
 .input-field, .select-field{
     width: 100%;
     height: 35px;
-    background-color: none;
+    background-color: white;
     background: none;
-    border-bottom: 1px solid var(--color2);
+    border-bottom: none;
     font-size: 1.1em;
+    color: var(--color2);
+}
+
+.input-field-back, .select-field-back{
+    display: block;
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    border: none;
+    font-size: 1.4em;
+    color: var(--color2);
+    margin: 5px 0;
+}
+
+.label-field-back{
+    display: block;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: var(--color2);
+    margin: 5px 0;
+}
+
+.label-field-back em{
+    font-style: italic;
+    font-weight: 400;
+}
+
+.enlace-formulario-back{
+    font-style: italic;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.enlace-formulario-back{
+    font-size: 1.1em;
+    font-style: italic;
+    font-weight: 600;
+    text-decoration: underline;
+    color: var(--color2);
+}
+.enlace-formulario-back:hover{
+    color: var(--color1);
+}
+.contenedor-input-password{
+    width: 100%;
+    position: relative;
+}
+.ico-ver-pass{
+    position: absolute;
+    right: 5px;
+    top:5px;
+    width: 30px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+.ico-ver-pass:hover{
+    opacity: 1;
+}
+
+.bt-autenticacion-RRSS{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 1.3em;
+    color: var(--color2);
+    padding: 10px;
+    border:1px solid var(--color2);
+    cursor: pointer;
+}
+
+.bt-autenticacion-RRSS img{
+    width: 35px;
+    position: absolute;
+    left: 10%;
+}
+.bt-autenticacion-RRSS:hover{
+    background-color: var(--color8);
     color: var(--color2);
 }
 
@@ -2580,6 +2674,139 @@ input[type="range"]::-webkit-slider-thumb {
 #productos-relacionados, #productos-similares, #recien-vistos{
     width: 100%;
     position: relative;
+}
+
+.formulario-o-back{
+    width: 100%;
+    color:var(--color2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.formulario-o-back span{
+    font-size: 1.3em;
+    font-style: italic;
+    background-color: var(--color3);
+    display: block;
+    padding: 4px 10px;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+}
+.formulario-o-back-line{
+    width: 100%;
+    height: 1px;
+    background-color: var(--color2);
+    margin: 20px 0;
+}
+
+
+
+
+
+
+
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+
+/* 22. CUENTA - REGISTRO */
+#wrap-IngresoRegistro{
+    background-color: var(--color3);
+    width: 100%;
+    padding: 100px 0;
+    position: relative;
+}
+
+#contenedor-IngresoRegistro{
+    width: 100%;
+    max-width: 650px;
+    padding: 0 15px;
+    margin: auto;
+}
+
+#nav-tab-IngresoRegistro{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.bt-tab-IngresoRegistro{
+    display: inline-block;
+    color: var(--color2);
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 0 25px;
+}
+.bt-tab-IngresoRegistro span{
+    opacity: 0.7;
+    border-bottom: 2px solid rgba(255,255,255,0);
+}
+
+.bt-tab-IngresoRegistro + .bt-tab-IngresoRegistro{
+    border-left: 2px solid var(--color2);
+}
+
+.bt-tab-IngresoRegistro:hover, .bt-tab-IngresoRegistro:active{
+    
+}
+
+.bt-tab-IngresoRegistro:hover span, .bt-tab-IngresoRegistro:active span{
+    opacity: 1;
+    border-bottom: 2px solid var(--color2);
+}
+
+.bt-tab-IngresoRegistro-activo span{
+    opacity: 1;
+    border-bottom: 2px solid var(--color2);
+}
+
+.form-IngresoRegistro{
+    padding: 50px 0;
+    display: none;
+}
+.form-IngresoRegistro h2{
+    font-size: 2.3em;
+}
+
+/* ------- adornos --------*/
+.adorno-pagina{
+    width: auto;
+    position: absolute;
+    z-index: 2;
+}
+#adorno-pagina-seccion-1{
+    left:-10px;
+    top:30%;
+}
+#adorno-pagina-seccion-2{
+    right:5%;
+    top:20%;
+}
+#adorno-pagina-seccion-3{
+    right:-10px;
+    top:55%;
+}
+
+#adorno-pagina-seccion-4{
+    left:10%;
+    bottom:10%;
+}
+
+#adorno-pagina-seccion-5{
+    right:5%;
+    bottom:0;
+}
+
+#adorno-pagina-seccion-6{
+    top:0;
+    left:40px;
 }
 
 /* ------------------------------------------------- */
@@ -2927,6 +3154,14 @@ input[type="range"]::-webkit-slider-thumb {
     .bt-cucu-world{
         display: none;
     }
+    /* ------------------------------------------------- */
+    /* ------------------------------------------------- */
+    /* 22. CUENTA - REGISTRO */
+    /* ------- adornos --------*/
+    .adorno-pagina{
+        width: 80px;
+    }
+
 }
 
 /* ------------------------------------------------- */
@@ -3046,6 +3281,15 @@ input[type="range"]::-webkit-slider-thumb {
         margin-bottom: 20px;
         
     }
+
+    /* ------------------------------------------------- */
+    /* ------------------------------------------------- */
+    /* 22. CUENTA - REGISTRO */
+    /* ------- adornos --------*/
+    .adorno-pagina{
+        display: none;
+    }
+
 
    
 }
@@ -3317,6 +3561,35 @@ input[type="range"]::-webkit-slider-thumb {
         top:0;
         width: 30px;
     }
+    /* ------------------------------------------------- */
+    /* ------------------------------------------------- */
+    /* ------------------------------------------------- */
+
+    /* 20. FORMULARIOS */
+
+    .bt-autenticacion-RRSS{
+        font-size: 1em;
+    }
+
+    .bt-autenticacion-RRSS img{
+        width: 25px;
+    }
+    /* ------------------------------------------------- */
+    /* ------------------------------------------------- */
+    /* ------------------------------------------------- */
+    /* ------------------------------------------------- */
+
+    /* 22. CUENTA - REGISTRO */
+
+    .bt-tab-IngresoRegistro{
+        font-size: 1.2em;
+        padding: 0 15px;
+    }
+
+    .form-IngresoRegistro h2{
+        font-size: 1.8em;
+    }
+
 
     
     
