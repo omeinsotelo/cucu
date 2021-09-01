@@ -2677,7 +2677,7 @@ input[type="range"]::-webkit-slider-thumb {
     border-top: 1px solid var(--color2);
 }
 
-#productos-relacionados, #productos-similares, #recien-vistos{
+#productos-relacionados, #productos-similares, #recien-vistos, #otros-productos {
     width: 100%;
     position: relative;
 }
@@ -2831,7 +2831,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 /* lista de productos */
 #lista-productos-carrito{
-    flex:3;
+    flex:4;
     padding: 10px 0;
 }
 
@@ -2864,39 +2864,41 @@ input[type="range"]::-webkit-slider-thumb {
     font-family: 'Josefin Sans', sans-serif;
 }
 
-/* resumen de compra */
-#resumen-cuenta-carrito{
-    flex:1;
-    padding: 10px 0;
-}
+
 .contenedor-producto-carrito{
     display: flex;
+    align-items: flex-start;
     padding: 35px 0 35px 0;
     border-bottom: 1px solid var(--color2);
 }
 .contenedor-producto-carrito img{
     width: 25%;
+    max-width: 225px;
+    height: auto;
+    margin: 0 15px;
 }
-.align{
-    text-align: left;
+
+.wrap-nombre-precio-producto-carro{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
 }
-.contenedor-producto-carrito > * {
-    display: block;
-    margin-right: 20px;
-}
+
 .precio-producto-carrito{
     color: var(--color2);
     font-weight: 500;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.7em;
     text-transform: uppercase;
-    padding-top: 23px;
+    text-align: right;
 }
 .nombre-producto-carro{
     color: var(--color2);
     font-size: 1.7em;
     text-align: center;
     font-weight: 700;
+    padding-right: 15px;
 }
 .info-producto-carrito{
     flex-grow: 2;
@@ -2917,20 +2919,17 @@ input[type="range"]::-webkit-slider-thumb {
 }
 .caracteristicas-producto-carrito > *{
     display: flex;
-}
-.caracteristicas-producto-carrito :nth-child(1) > * {
-    display: block;
     margin-right: 20px;
 }
-.caracteristicas-producto-carrito :nth-child(2) > * {
-    display: block;
+.nombre-lista-filtros {
     margin-right: 20px;
 }
 .contenedor-acciones-producto-carrito{
     width: 100%;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: center;
     margin-bottom: 20px;
 }
 .cantidad-producto-carrito{
@@ -2956,6 +2955,7 @@ input[type="range"]::-webkit-slider-thumb {
 .cantidad-producto-carrito > *{
     margin-right: 15px;
 }
+
 #bt-eliminar-producto::after{
     font-family: "Material Icons";
     content: "\e14c";
@@ -2965,6 +2965,7 @@ input[type="range"]::-webkit-slider-thumb {
 #bt-guardar-producto{
     border-right: 1px solid var(--color2);
     padding-right: 10px;
+    margin: 0 15px;
 }
 #bt-eliminar-producto{
     padding-left: 10px;
@@ -2975,6 +2976,11 @@ input[type="range"]::-webkit-slider-thumb {
     color: var(--color1);
     margin: 0 10px;
 }
+
+#bt-guardar-producto:hover, #bt-eliminar-producto:hover{
+    color: var(--color1);
+}
+
 .confirma-regalo span{
     color: var(--color2);
     font-weight: 600;
@@ -2988,8 +2994,14 @@ input[type="range"]::-webkit-slider-thumb {
     font-style: italic;
     font-size: 1em;
 }
+.mas-info-carro:hover{
+    color: var(--color1);
+}
 
+
+/* Resumen */
 #resumen-cuenta-carrito{
+    flex:1;
     background-color: var(--color3);
     color: var(--color1);
     text-align: center;
@@ -2997,9 +3009,9 @@ input[type="range"]::-webkit-slider-thumb {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 30px 5px;
-    width: auto;
-    margin: 0 auto 20px 30px;
+    padding: 30px 10px;
+    width: 100%;
+    margin: 0 0 0 15px;
 }
 .cupon{
     display:flex;
@@ -3014,20 +3026,23 @@ input[type="range"]::-webkit-slider-thumb {
 .cupon p{
     color: var(--color1);
     margin-top: 10px;
-}
-#resumen-cuenta-carrito h4, span, h3{
-    color: var(--color2);
-    font-family: 'Josefin Sans', sans-serif;
+    text-align: left;
 }
 .sub-total{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .sub-total h4{
     font-size: 1.8em;
     font-weight: 500;
     margin-right: 10px;
 }
+#resumen-cuenta-carrito h4, span, h3{
+    color: var(--color2);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
 #resumen-cuenta-carrito h3{
     font-size: 1.8em;
     font-weight: 700;
@@ -3086,6 +3101,10 @@ input[type="range"]::-webkit-slider-thumb {
     padding-top: 30px;
 }
 
+
+
+
+
 /* ------------------------------------------------- */
 /* ------------------------------------------------- */
 /* ------------------------------------------------- */
@@ -3107,64 +3126,20 @@ input[type="range"]::-webkit-slider-thumb {
     /* ------------------------------------------------- */
     /* CARRITO */
 
-@media only screen and (max-width: 1450px) {
-    .precio-producto-carrito {
-        font-size: 2em;
-    }
-    .contenedor-acciones-producto-carrito{
-        flex-direction: column;
-        justify-content:center;
-    }
-    #bt-guardar-producto{
-        border-right: none;
-        text-align: left !important;
-        padding: 5px 0 5px 0;
-    }
-    #bt-eliminar-producto{
-        text-align: left !important;
-        padding: 5px 0 5px 0;
-    }
-}
-
-@media only screen and (max-width: 1080px) {
-    .sub-total{
-        flex-direction: column;
-    }
-    .cupon p{
-        text-align:left;
-        padding-left: 10px;
-    }
-
-}
-@media only screen and (max-width: 750px) {
-    #wrap-carrito{
-        flex-direction: column-reverse;
-        align-items: flex-start;
-        justify-content: center;
-    }
+@media only screen and (max-width: 1300px) {
+    /* ------------------------------------------------- */
+    /* ------------------------------------------------- */
+    /* 23. CARRITO */
+    /* resumen de compra */
     #resumen-cuenta-carrito{
-        text-align: center;
-        display:inline-flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin: 0;
+        font-size: 0.9em;
     }
-    .precio-producto-carrito{
-        display: none;
+    .contenedor-producto-carrito img{
+        width: 20%;
+        max-width: 140px;
     }
-    .titulo-seccion{
-        display: none;
-    }
-    #header-lista-productos-carrito{
-        display: none;
-    }
-
 }
-    /* ------------------------------------------------- */
-    /* ------------------------------------------------- */
-    /* 3. NAVERGADOR */
+
 
 @media only screen and (max-width: 1050px) {
     /* ------------------------------------------------- */
@@ -3225,6 +3200,56 @@ input[type="range"]::-webkit-slider-thumb {
 
 
 }
+
+
+@media only screen and (max-width: 1180px) {
+    /* ------------------------------------------------- */
+    /* ------------------------------------------------- */
+    /* 23. CARRITO */
+
+    .contenedor-producto-carrito img{
+        width: 20%;
+        max-width: 120px;
+    }
+
+    /* resumen de compra */
+    #resumen-cuenta-carrito{
+        font-size: 0.8em;
+    }
+
+    .sub-total{
+        flex-direction: column;
+    }
+    .cupon p{
+        text-align:left;
+        padding-left: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 1100px) {
+    /* ------------------------------------------------- */
+    /* ------------------------------------------------- */
+    /* 23. CARRITO */
+    #wrap-carrito{
+        flex-flow: column-reverse;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    /* resumen de compra */
+    #resumen-cuenta-carrito{
+        font-size: 1em;
+        margin: 20px 0;
+        
+    }
+    /* lista de productos */
+    #lista-productos-carrito{
+        flex:1;
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+
 
 @media only screen and (max-width: 980px) {
     
@@ -3507,7 +3532,7 @@ input[type="range"]::-webkit-slider-thumb {
 /* ------------------------------------------------- */
 /* ------------------------------------------------- */
 
-@media only screen and (max-width: 840px) {
+@media only screen and (max-width: 850px) {
    /* ------------------------------------------------- */
     /* ------------------------------------------------- */
     /* 8. PRODUCTOS POR CATEGORÍAS*/
@@ -3533,6 +3558,17 @@ input[type="range"]::-webkit-slider-thumb {
     /* 18. PRODUCTO AMPLIADO */
     .header-masinformacion-producto-ampliado{
         font-size: 0.9em;
+    }
+    /* ------------------------------------------------- */
+    /* ------------------------------------------------- */
+    /* 23. CARRITO */
+    .wrap-nombre-precio-producto-carro{
+        flex-flow: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    #header-lista-productos-carrito h5{
+        display: none;
     }
 
 }
@@ -3630,7 +3666,22 @@ input[type="range"]::-webkit-slider-thumb {
         display: none;
     }
 
-
+    /* ------------------------------------------------- */
+    /* ------------------------------------------------- */
+    /* 23. CARRITO */
+    .contenedor-acciones-producto-carrito{
+        flex-flow: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    #bt-guardar-producto, #bt-eliminar-producto{
+        border:none;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .contenedor-acciones-producto-carrito > *{
+        margin-bottom: 10px;
+    }
    
 }
 
