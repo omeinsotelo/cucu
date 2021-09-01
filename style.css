@@ -35,6 +35,7 @@ Version:
 20. FORMULARIOS
 21. CARRUSELES INTERNOS
 22. CUENTA - REGISTRO
+23. CARRITO 
 
 
 
@@ -2342,6 +2343,13 @@ input[type="range"]::-webkit-slider-thumb {
     border-top: 1px solid var(--color2);
 }
 
+#tabs-header-masinformacion-producto-ampliado-carro{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding: 20px 0;
+}
+
 .header-masinformacion-producto-ampliado{
     color: var(--color2);
     font-weight: 600;
@@ -2540,8 +2548,6 @@ input[type="range"]::-webkit-slider-thumb {
     color:white;
     text-decoration: none;
 }
-
-
 
 
 
@@ -2813,6 +2819,277 @@ input[type="range"]::-webkit-slider-thumb {
 /* ------------------------------------------------- */
 /* ------------------------------------------------- */
 /* ------------------------------------------------- */
+/* 23. CARRITO */
+#wrap-carrito{
+    width: 100%;
+    max-width: 90vw;
+    margin: 50px auto;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+/* lista de productos */
+#lista-productos-carrito{
+    flex:3;
+    padding: 10px 0;
+}
+
+#lista-productos-carrito h2{
+    text-align: left !important;
+    margin-left: 0 !important;
+}
+
+#header-lista-productos-carrito{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content:space-between;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--color2);
+}
+
+#header-lista-productos-carrito button, #header-lista-productos-carrito a, #header-lista-productos-carrito span{
+    color: var(--color2);
+    font-weight: 600;
+}
+
+#header-lista-productos-carrito button:hover, #header-lista-productos-carrito a:hover, #header-lista-productos-carrito span:hover{
+    color: var(--color1);
+}
+
+#header-lista-productos-carrito h5{
+    color: var(--color2);
+    font-weight: 600;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* resumen de compra */
+#resumen-cuenta-carrito{
+    flex:1;
+    padding: 10px 0;
+}
+.contenedor-producto-carrito{
+    display: flex;
+    padding: 35px 0 35px 0;
+    border-bottom: 1px solid var(--color2);
+}
+.contenedor-producto-carrito img{
+    width: 25%;
+}
+.align{
+    text-align: left;
+}
+.contenedor-producto-carrito > * {
+    display: block;
+    margin-right: 20px;
+}
+.precio-producto-carrito{
+    color: var(--color2);
+    font-weight: 500;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.7em;
+    text-transform: uppercase;
+    padding-top: 23px;
+}
+.nombre-producto-carro{
+    color: var(--color2);
+    font-size: 1.7em;
+    text-align: center;
+    font-weight: 700;
+}
+.info-producto-carrito{
+    flex-grow: 2;
+}
+.cat-producto-carro{
+    color: var(--color2);
+    font-size: 1.05em;
+    font-style: italic;
+}
+.detalle-carro{
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--color2);
+    font-size: 1.05em;
+    font-weight: 400;
+}
+.caracteristicas-producto-carrito{
+    padding-top: 10px;
+}
+.caracteristicas-producto-carrito > *{
+    display: flex;
+}
+.caracteristicas-producto-carrito :nth-child(1) > * {
+    display: block;
+    margin-right: 20px;
+}
+.caracteristicas-producto-carrito :nth-child(2) > * {
+    display: block;
+    margin-right: 20px;
+}
+.contenedor-acciones-producto-carrito{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.cantidad-producto-carrito{
+    display:inline-flex;
+    flex-wrap: row nowrap;
+    border: 2px solid var(--color2);
+    justify-content: space-between;
+    padding: 8px 10px;
+}
+.cantidad-producto-carrito label{
+    color: var(--color2);
+    font-weight: 400;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.05em;
+}
+.cantidad-producto-carrito select{
+    color: var(--color2);
+    font-weight: 600;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2em;
+    border: none;
+}
+.cantidad-producto-carrito > *{
+    margin-right: 15px;
+}
+#bt-eliminar-producto::after{
+    font-family: "Material Icons";
+    content: "\e14c";
+    color: var(--color1);
+    margin: 0 10px;
+}
+#bt-guardar-producto{
+    border-right: 1px solid var(--color2);
+    padding-right: 10px;
+}
+#bt-eliminar-producto{
+    padding-left: 10px;
+}
+#bt-guardar-producto::after{
+    font-family: "Material Icons";
+    content: "\e171";
+    color: var(--color1);
+    margin: 0 10px;
+}
+.confirma-regalo span{
+    color: var(--color2);
+    font-weight: 600;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.05em;
+}
+.mas-info-carro{
+    color: var(--color2);
+    font-weight: 400;
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: italic;
+    font-size: 1em;
+}
+
+#resumen-cuenta-carrito{
+    background-color: var(--color3);
+    color: var(--color1);
+    text-align: center;
+    display:inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 5px;
+    width: auto;
+    margin: 0 auto 20px 30px;
+}
+.cupon{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cupon img{
+    width: 35px;
+    margin-right: 10px;
+}
+.cupon p{
+    color: var(--color1);
+    margin-top: 10px;
+}
+#resumen-cuenta-carrito h4, span, h3{
+    color: var(--color2);
+    font-family: 'Josefin Sans', sans-serif;
+}
+.sub-total{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sub-total h4{
+    font-size: 1.8em;
+    font-weight: 500;
+    margin-right: 10px;
+}
+#resumen-cuenta-carrito h3{
+    font-size: 1.8em;
+    font-weight: 700;
+}
+.sub-total span{
+    font-size: 1.3em;
+    font-weight: 400;
+}
+.margin-confirma-regalo{
+    margin: 20px 0;
+}
+
+.sub-total-horizontal{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--color2);
+}
+.sub-total-horizontal h3, span, h4{
+    color: var(--color2);
+    font-family: 'Josefin Sans', sans-serif;
+    margin-right: 10px;
+}
+.sub-total-horizontal h4{
+    font-size: 1.8em;
+    font-weight: 500;
+}
+.sub-total-horizontal h3{
+    font-size: 1.8em;
+    font-weight: 700;
+}
+.sub-total-horizontal span{
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+#tabs-header-masinformacion-producto-ampliado-carro{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding: 20px 0;
+}
+.space{
+    margin-right: 40px;
+}
+
+.título-articulos-carro{
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 700;
+    font-size: 2.2em;
+    color: var(--color2);
+}
+
+.filete-parrafo{
+    border-top: 1px solid var(--color2);
+    padding-top: 30px;
+}
+
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
 
 /* ------------------------------------------------- */
 /* ------------------------------------------------- */
@@ -2825,6 +3102,69 @@ input[type="range"]::-webkit-slider-thumb {
 /* ------------------------------------------------- */
 /* ------------------------------------------------- */
 /* ------------------------------------------------- */
+
+ /* ------------------------------------------------- */
+    /* ------------------------------------------------- */
+    /* CARRITO */
+
+@media only screen and (max-width: 1450px) {
+    .precio-producto-carrito {
+        font-size: 2em;
+    }
+    .contenedor-acciones-producto-carrito{
+        flex-direction: column;
+        justify-content:center;
+    }
+    #bt-guardar-producto{
+        border-right: none;
+        text-align: left !important;
+        padding: 5px 0 5px 0;
+    }
+    #bt-eliminar-producto{
+        text-align: left !important;
+        padding: 5px 0 5px 0;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    .sub-total{
+        flex-direction: column;
+    }
+    .cupon p{
+        text-align:left;
+        padding-left: 10px;
+    }
+
+}
+@media only screen and (max-width: 750px) {
+    #wrap-carrito{
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    #resumen-cuenta-carrito{
+        text-align: center;
+        display:inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
+    .precio-producto-carrito{
+        display: none;
+    }
+    .titulo-seccion{
+        display: none;
+    }
+    #header-lista-productos-carrito{
+        display: none;
+    }
+
+}
+    /* ------------------------------------------------- */
+    /* ------------------------------------------------- */
+    /* 3. NAVERGADOR */
 
 @media only screen and (max-width: 1050px) {
     /* ------------------------------------------------- */
