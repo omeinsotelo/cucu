@@ -36,6 +36,7 @@ Version:
 21. CARRUSELES INTERNOS
 22. CUENTA - REGISTRO
 23. CARRITO 
+24. CUENTA 
 
 
 
@@ -50,7 +51,7 @@ Version:
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
     box-sizing: border-box !important;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--font2);
 }
 
 :root {
@@ -62,6 +63,8 @@ Version:
     --color6:#ffd497;
     --color7:#00999b;
     --color8:#A4DFDE;
+    --font1: 'Bodoni Moda', serif;
+    --font2: 'Josefin Sans', sans-serif;
 }
 
 body, html{
@@ -73,6 +76,13 @@ body, html{
     font-size: 14px; 
 }
 
+.font1{
+    font-family: var(--font1);
+}
+
+.font2{
+    font-family: var(--font2);
+}
 .color1{
 	color: var(--color1) !important;
 }
@@ -223,8 +233,11 @@ a, button{
     text-decoration: none;
     transition: all linear 0.3s;
 }
+.boton span{
+    color:white;
+}
 
-.boton:hover{
+.boton:hover, .boton span:hover{
     color:white;
     background-color: black !important;
 }
@@ -245,7 +258,7 @@ p{
 
 
 h1, h2, h3, h4, h5{
-    font-family: 'Bodoni Moda', serif;
+    font-family: var(--font1);
 }
 
 .titulo-seccion{
@@ -258,7 +271,7 @@ h1, h2, h3, h4, h5{
 }
 .bajada-titulo-seccion{
     width: 90%;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--font2);
     color: var(--color2);
     font-size: 1.1em;
     text-align: center;
@@ -274,14 +287,14 @@ h1, h2, h3, h4, h5{
 }
 .bajada-titulo-seccion-white{
     width: 90%;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--font2);
     color: white;
     font-size: 1.1em;
     text-align: center;
     margin: 30px auto;
 }
 .enlace-titulo-seccion{
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--font2);
     color: var(--color1);
     font-size: 1.3em;
     text-align: center;
@@ -298,7 +311,7 @@ h1, h2, h3, h4, h5{
     color: var(--color1) !important;
 }
 
-.bt-outline{
+.bt-outline-verde{
     display: inline-block;
     padding: 8px 15px;
     color: var(--color2) !important;
@@ -308,9 +321,14 @@ h1, h2, h3, h4, h5{
     text-decoration: none;
 }
 
-.bt-outline:hover{
+.bt-outline-verde:hover{
     color: white !important;
     background-color: var(--color2);
+    border:1px solid var(--color2);
+}
+
+.bt-ico-tabla:hover span{
+    color: var(--color1);
 }
 
 
@@ -496,7 +514,7 @@ h1, h2, h3, h4, h5{
 .subtitulo-menu-cuenta{
     text-transform: uppercase;
     color: var(--color2);
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--font2);
     font-size: 1.3em;
     font-weight: 600;
 }
@@ -523,7 +541,7 @@ h1, h2, h3, h4, h5{
 
 .enlace-acordeon-menu-cuenta{
     color: var(--color2);
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--font2);
     font-size: 1.1em;
     font-weight: 600;
     text-decoration: none;
@@ -538,7 +556,7 @@ h1, h2, h3, h4, h5{
 
 .enlace-cerrar-menu-cuenta{
     color: var(--color1);
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--font2);
     font-size: 1.1em;
     font-weight: 600;
     text-decoration: none;
@@ -554,7 +572,7 @@ h1, h2, h3, h4, h5{
 
 .subenlace-acordeon-menu-cuenta{
     color: var(--color2);
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--font2);
     font-size: 0.9em;
     font-weight: 600;
     text-decoration: none;
@@ -705,7 +723,7 @@ h1, h2, h3, h4, h5{
 .subtitulo-subcategoria-nav{
     text-transform: uppercase;
     color: var(--color2);
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--font2);
     font-size: 1.2em;
     font-weight: 600;
     border-bottom: 1px solid var(--color2);
@@ -713,7 +731,7 @@ h1, h2, h3, h4, h5{
 
 .enlace-subcategoria-nav{
     color: var(--color2);
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--font2);
     font-size: 1em;
     font-weight: 600;
     text-decoration: none;
@@ -726,7 +744,7 @@ h1, h2, h3, h4, h5{
 
 .enlace-verTodo-subcategoria-nav{
     color: var(--color1);
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--font2);
     font-size: 1em;
     font-weight: 600;
     text-decoration: none;
@@ -1433,7 +1451,7 @@ h1, h2, h3, h4, h5{
 }
 
 .columna-info-footer h2{
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--font2);
     color: white;
     font-size: 1.3em;
     text-align: center;
@@ -1441,7 +1459,7 @@ h1, h2, h3, h4, h5{
 
 .columna-info-footer a, .columna-info-footer p{
     display: block;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--font2);
     color: white;
     font-size: 1.1em;
     text-align: center;
@@ -1531,7 +1549,7 @@ h1, h2, h3, h4, h5{
 }
 .categoria-global-cabecera-seccion{
     color: var(--color2);
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--font2);
     font-size: 1.3em;
     text-transform: uppercase;
 }
@@ -1615,7 +1633,7 @@ h1, h2, h3, h4, h5{
 }
 
 .titulo-filtro{
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--font2);
     text-transform: uppercase;
     color: var(--color1);
     font-size: 1.3em;
@@ -1627,7 +1645,7 @@ h1, h2, h3, h4, h5{
    
 }
 .info-filtro{
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--font2);
     color: var(--color2);
     font-size: 0.9em;
     font-weight: 600;
@@ -1655,7 +1673,7 @@ h1, h2, h3, h4, h5{
     background-color: none !important;
     background: none !important;
     border:none !important;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--font2);
     color: var(--color2) !important;
     font-size: 1.1em;
     font-weight: 600;
@@ -2124,7 +2142,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .precio-producto-ampliado{
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--font2);
     color: var(--color2);
     font-size: 1.6em;
 }
@@ -2191,7 +2209,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .titulo-variantes-producto-ampliado{
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--font2);
     color: var(--color2);
     font-size: 1.6em;
 }
@@ -2430,7 +2448,7 @@ input[type="range"]::-webkit-slider-thumb {
 
 .wrap-comentario-cliente h1, .wrap-comentario-cliente h2, .wrap-comentario-cliente h3, .wrap-comentario-cliente h4, .wrap-comentario-cliente h5, .wrap-comentario-cliente h6{
     color: var(--color2);
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--font2);
 }
 /* ------------------------------------------------- */
 /* ------------------------------------------------- */
@@ -2462,7 +2480,7 @@ input[type="range"]::-webkit-slider-thumb {
 #message-addCart h5{
     color: var(--color2);
     text-align: center;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--font2);
 }
 #message-addCart p{
     color: var(--color1);
@@ -2566,18 +2584,30 @@ input[type="range"]::-webkit-slider-thumb {
 .row-formulario > *{
     width: 100%;
 }
+
 .row-formulario-doble{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
 }
+.row-formulario-triple{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.row-formulario-triple > *:nth-child(2){
+    margin: 0 20px;
+}
+
 
 .input-field, .select-field{
     width: 100%;
     height: 35px;
     background-color: white;
     background: none;
-    border-bottom: none;
+    border:1px solid var(--color2);
     font-size: 1.1em;
     color: var(--color2);
 }
@@ -2662,7 +2692,30 @@ input[type="range"]::-webkit-slider-thumb {
     color: var(--color2);
 }
 
+.separador{
+    width: 100%;
+    height: 1px;
+    margin: 15px auto;
+    background-color: var(--color2);
+}
 
+.bt-outline{
+    display:inline-flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 1.3em;
+    color: var(--color2);
+    padding: 10px;
+    border:1px solid var(--color2);
+    cursor: pointer;
+    text-transform: none !important;
+}
+.bt-outline:hover{
+    color: var(--color1);
+    border:1px solid var(--color1);
+}
 /* ------------------------------------------------- */
 /* ------------------------------------------------- */
 /* ------------------------------------------------- */
@@ -2707,6 +2760,68 @@ input[type="range"]::-webkit-slider-thumb {
     height: 1px;
     background-color: var(--color2);
     margin: 20px 0;
+}
+.row-header-formulario{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Tabla de formulario */
+.tabla-formulario{
+    width: 100%;
+    margin: 30px 0;
+}
+
+.tabla-formulario thead{
+    width: 100%;
+    margin: 10px 0;
+}
+
+.tabla-formulario thead th{
+    color:var(--color2);
+    font-weight: 600;
+}
+
+.fila-tabla-formulario{
+    background-color: white;
+    border-bottom: 10px solid var(--color3);
+    border-top: 10px solid var(--color3);
+}
+
+.fila-tabla-formulario td{
+    padding: 3px;
+    vertical-align: middle;
+    min-width: 20px;
+    color:var(--color2);
+    font-size: 1.1em;
+}
+
+
+/* Modal */
+.modal-cucu{
+    width: 90%;
+    max-width: 800px;
+    background-color: var(--color3);
+    padding: 25px;
+    position: absolute;
+    z-index: 1010;
+    top:-5000px;
+    left:-5000px;
+    transform:translate(-50%, -50%);
+}
+.show-modal{
+    top:50% !important;
+    left: 50% !important;
+}
+
+.bt-close-modal{
+    width: 20px;
+    position: absolute;
+    right: 20px;
+    top:20px;
+    cursor: pointer;
 }
 
 
@@ -2861,7 +2976,7 @@ input[type="range"]::-webkit-slider-thumb {
 #header-lista-productos-carrito h5{
     color: var(--color2);
     font-weight: 600;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--font2);
 }
 
 
@@ -2888,7 +3003,7 @@ input[type="range"]::-webkit-slider-thumb {
 .precio-producto-carrito{
     color: var(--color2);
     font-weight: 500;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--font2);
     font-size: 1.7em;
     text-transform: uppercase;
     text-align: right;
@@ -2909,7 +3024,7 @@ input[type="range"]::-webkit-slider-thumb {
     font-style: italic;
 }
 .detalle-carro{
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--font2);
     color: var(--color2);
     font-size: 1.05em;
     font-weight: 400;
@@ -2942,13 +3057,13 @@ input[type="range"]::-webkit-slider-thumb {
 .cantidad-producto-carrito label{
     color: var(--color2);
     font-weight: 400;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--font2);
     font-size: 1.05em;
 }
 .cantidad-producto-carrito select{
     color: var(--color2);
     font-weight: 600;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--font2);
     font-size: 1.2em;
     border: none;
 }
@@ -2984,13 +3099,13 @@ input[type="range"]::-webkit-slider-thumb {
 .confirma-regalo span{
     color: var(--color2);
     font-weight: 600;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--font2);
     font-size: 1.05em;
 }
 .mas-info-carro{
     color: var(--color2);
     font-weight: 400;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--font2);
     font-style: italic;
     font-size: 1em;
 }
@@ -3038,9 +3153,9 @@ input[type="range"]::-webkit-slider-thumb {
     font-weight: 500;
     margin-right: 10px;
 }
-#resumen-cuenta-carrito h4, span, h3{
+#resumen-cuenta-carrito h4{
     color: var(--color2);
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--font2);
 }
 
 #resumen-cuenta-carrito h3{
@@ -3063,7 +3178,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 .sub-total-horizontal h3, span, h4{
     color: var(--color2);
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--font2);
     margin-right: 10px;
 }
 .sub-total-horizontal h4{
@@ -3090,7 +3205,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .título-articulos-carro{
-    font-family: 'Bodoni Moda', serif;
+    font-family: var(--font1);
     font-weight: 700;
     font-size: 2.2em;
     color: var(--color2);
@@ -3100,9 +3215,70 @@ input[type="range"]::-webkit-slider-thumb {
     border-top: 1px solid var(--color2);
     padding-top: 30px;
 }
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* 24. CUENTA  */
+#wrap-cuenta{
+    width: 100%;
+    padding: 50px 5vw;
+    background: var(--color3);
+    position: relative;
+}
+
+.titulo-contenido-cuenta{
+    font-family: var(--font2);
+    color:var(--color1);
+}
+
+.iniciales-cuenta{
+    display: flex;
+    margin: 15px auto;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+.iniciales-cuenta > *{
+    font-size: 1.6em;
+    display: inline-flex;
+    flex-flow: column;
+    align-content: center;
+    justify-content: center;
+    font-family: var(--font1);
+    color: white;
+    background: var(--color2);
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+}
+
+#wrap-columnas-cuenta{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: stretch;
+    justify-content: space-between;
+}
+
+#wrap-navegador-cuenta{
+    flex:1;
+    padding: 0 20px 0 0;
+    border-right: 1px solid var(--color2);
+    margin: 0 20px 0 0;
+}
+
+#wrap-contenido-cuenta{
+    flex:3;
+}
 
 
-
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
 
 
 /* ------------------------------------------------- */
@@ -3399,7 +3575,7 @@ input[type="range"]::-webkit-slider-thumb {
         margin: 0;
     }
     .info-filtro{
-        font-family: 'Josefin Sans', sans-serif;
+        font-family: var(--font2);
         color: var(--color2);
         font-size: 0.8em;
         font-weight: 600;
