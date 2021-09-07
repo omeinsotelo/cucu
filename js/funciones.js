@@ -757,5 +757,27 @@ $(document).ready(function(){
 		}
 	};
 
+	/* MODALES */
+	$("#bt-agregarDireccion").click(function(){	
+		showModal("#agregar-direccion");
+	});
+
+	$(".bt-close-modal").click(function(){	
+		hideModal();
+	});
+
+	function showModal(elemento){
+		$(elemento).addClass("show-modal");
+		$("#lightBox-Back").addClass("show-lightBox-Back-3");
+		$("body").addClass("fixed-body");
+		$("html, body").animate({ scrollTop: 0 }, 500, 'linear');
+	}
+
+	function hideModal(){
+		$(".modal-cucu").removeClass("show-modal");
+		$("#lightBox-Back").removeClass("show-lightBox-Back-3");
+		$("body").removeClass("fixed-body");
+	}
+
 
 });
