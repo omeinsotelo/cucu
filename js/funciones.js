@@ -780,4 +780,23 @@ $(document).ready(function(){
 	}
 
 
+
+	/* CUENTA ============================================================= */
+
+	$("#tucuentaBoton").click(function(){	
+		$("#wrap-navegador-cuenta").addClass("view-wrap-navegador-cuenta");
+		$("#lightBox-Back").addClass("show-lightBox-Back-3");
+		$("body").addClass("fixed-body");
+		$("html, body").animate({ scrollTop: 0 }, 500, 'linear');
+	});
+
+	$("#close-menuCuenta").click(function(){	
+		$("#wrap-navegador-cuenta").removeClass("view-wrap-navegador-cuenta");
+		$("#lightBox-Back").removeClass("show-lightBox-Back-3");
+		$("body").removeClass("fixed-body");
+	})
+
+
+
+
 });
