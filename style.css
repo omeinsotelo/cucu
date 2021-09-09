@@ -426,11 +426,16 @@ h1, h2, h3, h4, h5{
 /* logo */
 #logo-top-header{
     flex: 1;
+    
+}
+#logo-top-header a{
+    display: block;
     width: 75px;
     height: 100px;
     background:url(images/logo-cucu.svg) center 0  no-repeat;
     background-size: contain;
     text-indent: -5000px;
+    text-decoration: none;
     margin: auto;
 }
 
@@ -2474,7 +2479,6 @@ input[type="range"]::-webkit-slider-thumb {
     width: 20px;
     cursor: pointer;
     margin-bottom: 25px;
-    
 }
 
 #message-addCart h5{
@@ -3269,11 +3273,50 @@ input[type="range"]::-webkit-slider-thumb {
     border-right: 1px solid var(--color2);
     margin: 0 20px 0 0;
 }
+#tucuentaBoton{
+    display: flex;
+    align-items: center;
+    height: auto;
+    justify-content: center;
+    margin: 30px auto;
+}
+.tucuentaTitulo{
+    display: inline-block;
+    font-family: var(--font2);
+    color: var(--color2);
+    font-size: 1.1em;
+    text-align: center;
+    
+}
+.tucuentaTituloIco{
+    color: var(--color1);
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+    display: none;
+}
+.tuCuentaMovil{
+    display: none;
+}
 
 #wrap-contenido-cuenta{
     flex:3;
 }
 
+#close-menuCuenta{
+    width: 20px;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
 
 /* ------------------------------------------------- */
 /* ------------------------------------------------- */
@@ -3748,7 +3791,24 @@ input[type="range"]::-webkit-slider-thumb {
     }
 
 }
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* wrap-enlace-acordeon-menu-cuenta */
+@media only screen and (max-width: 882px) {
+    .enlace-acordeon-menu-cuenta{
+        font-size: 1em;
+    }
+}
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
 
+/* wrap-columnas-cuenta */
+@media only screen and (max-width: 825px) {
+    #wrap-navegador-cuenta{
+        flex:1.2;
+    }
+}
 /* ------------------------------------------------- */
 /* ------------------------------------------------- */
 
@@ -3904,7 +3964,47 @@ input[type="range"]::-webkit-slider-thumb {
         font-size: 0.7rem;
     }
     
+/* ------------------------------------------------- */
+    /* ------------------------------------------------- */
+    /* CONTENEDOR PRICIPAL PRODUCTO AMPLIADO*/
+    /* wrap-navegador-cuenta*/
+    #wrap-navegador-cuenta{
+        position: fixed;
+        top: 0;
+        right: -5000px;
+        z-index: 1010;
+        background:var(--color3);
+        border-right: none;
+        width: 80%;
+        height: 100vh;
+        padding: 20px;
+        margin: 0;
+    }
+
+    .view-wrap-navegador-cuenta{
+        right: 0 !important;
+    }
+
+    .tuCuentaMovil{
+        display: flex;
+        margin-top: 20px;
+    }
+    .wrap-enlace-acordeon-menu-cuenta{
+        justify-content:;
+    }
+    .tuCuentaMovil h4{
+        font-size: 1.6em;
+        font-family: var(--font2);
+        font-weight: 600;
+        color: var(--color2);
+        text-transform: uppercase;
+        padding-left: 30px;
+    }
+    .tucuentaTituloIco{
+        display: inline-block;
+    }
 }
+
 /* ------------------------------------------------- */
 /* ------------------------------------------------- */
 
